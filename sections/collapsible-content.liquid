@@ -1,0 +1,149 @@
+{{ 'section-collapsible-content.css' | asset_url | stylesheet_tag }}
+
+<script src="{{ 'collapsible-content.js' | asset_url }}" defer="defer"></script>
+
+{%- style -%}
+	.section-{{ section.id }}-padding {
+		padding-top: {{ section.settings.padding_top | times: 0.25 | round: 0 }}px;
+		padding-bottom: {{ section.settings.padding_bottom | times: 0.25 | round: 0 }}px;
+	}
+
+	@media screen and (min-width: 990px) {
+		.section-{{ section.id }}-padding {
+			padding-top: {{ section.settings.padding_top }}px;
+			padding-bottom: {{ section.settings.padding_bottom }}px;
+		}
+	}
+{%- endstyle -%}
+
+<div class="collapsible-content section-{{ section.id }}-padding">
+	<div class="container {% if section.settings.show_line_separator %}collapsible-content__separator{% endif %}">
+		<div class="collapsible-content__top">
+			{%- if section.settings.heading != blank -%}
+				<h2 class="collapsible-content__heading {{ section.settings.heading_size }}">
+					{{ section.settings.heading }}
+				</h2>
+			{%- endif -%}
+
+			{%- if section.settings.text != blank -%}
+				<div class="collapsible-content__text">
+					{{ section.settings.text | escape }}
+				</div>
+			{%- endif -%}
+		</div>
+
+		<div class="collapsible-content__items">
+			{%- for block in section.blocks -%}
+				<div class="collapsible-content__item {% if forloop.index == 1 %} active{% endif %}" {{ block.shopify_attributes }}>
+					<div class="collapsible-content__toggle">
+						<div class="collapsible-content__toggle-group">
+							<div class="collapsible-content__digit">{{ forloop.index }}</div>
+							{%- if block.settings.question != blank -%}
+								<h5 class="collapsible-content__question">{{ block.settings.question | escape }}</h5>
+							{%- endif -%}
+						</div>
+						<div class="collapsible-content__icon">
+							{%- render 'icon-button-arrow' -%}
+						</div>
+					</div>
+
+					{%- if block.settings.answer != blank -%}
+						<div class="collapsible-content__answer" {% if forloop.index == 1 %} style="display: block;" {% endif %}>
+							<div class="collapsible-content__answer-inner">{{ block.settings.answer }}</div>
+						</div>
+					{%- endif -%}
+				</div>
+			{%- endfor -%}
+		</div>
+	</div>
+</div>
+
+{% schema %}
+{
+	"name": "t:sections.collapsible-content.name",
+	"tag": "section",
+	"class": "collapsible-content-section spaced-section",
+	"enabled_on": {
+		"templates": [
+			"*"
+		]
+	},
+	"blocks": [
+		{
+			"type": "accordion",
+			"name": "t:sections.collapsible-content.blocks.accordion.name",
+			"limit": 20,
+			"settings": [
+				{
+					"type": "text",
+					"id": "question",
+					"default": "Some title",
+					"label": "t:sections.collapsible-content.settings.heading.label"
+				},
+				{
+					"type": "richtext",
+					"id": "answer",
+					"default": "<p>Some description</p>",
+					"label": "t:sections.collapsible-content.settings.text.label"
+				}
+			]
+		}
+	],
+	"settings": [
+		{
+			"type": "text",
+			"id": "heading",
+			"default": "Some header",
+			"label": "t:sections.collapsible-content.settings.heading.label"
+		},
+		{
+			"type": "select",
+			"id": "heading_size",
+			"options": [
+				{
+					"value": "h3",
+					"label": "t:sections.collapsible-content.settings.heading_size.options__1.label"
+				},
+				{
+					"value": "h2",
+					"label": "t:sections.collapsible-content.settings.heading_size.options__2.label"
+				},
+				{
+					"value": "h1",
+					"label": "t:sections.collapsible-content.settings.heading_size.options__3.label"
+				}
+			],
+			"default": "h2",
+			"label": "t:sections.collapsible-content.settings.heading_size.label"
+		},
+		{
+			"type": "textarea",
+			"id": "text",
+			"default": "Some description.",
+			"label": "t:sections.collapsible-content.settings.text.label"
+		},
+		{
+			"type": "checkbox",
+			"id": "show_line_separator",
+			"default": true,
+			"label": "t:sections.collapsible-content.settings.show_line_separator.label"
+		}
+	],
+	"presets": [
+		{
+			"name": "t:sections.collapsible-content.name",
+			"blocks": [
+				{
+					"type": "accordion"
+				},
+				{
+					"type": "accordion"
+				},
+				{
+					"type": "accordion"
+				}
+			]
+		}
+	]
+}
+{% endschema %}

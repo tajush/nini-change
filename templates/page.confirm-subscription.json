@@ -1,0 +1,57 @@
+{
+  "sections": {
+    "custom_liquid_ybRqxz": {
+      "type": "custom-liquid",
+      "custom_css": [
+        ".logo-size {width: 80px; height: auto; padding-bottom: 10px;}",
+        ".confirm-subscription {margin: 0 auto; width: 90%; text-align: center; position: absolute; top: -280%; left: 50%; transform: translate(-50%, 35%); background: white; padding: 20px;}",
+        ".confirm-subscription h4 {margin: 0;}",
+        ".confirm-subscription p {padding-top: 20px;}",
+        "@media screen and (min-width: 992px) {.confirm-subscription {margin: 0 auto; max-width: 450px; text-align: center; position: absolute; top: -350%; left: 50%; transform: translate(-50%, 35%); }}"
+      ],
+      "settings": {
+        "custom_liquid": "<div class=\"confirm-subscription\">\n<img class=\"logo-size\" src=\"{{ 'logo.png' | asset_url }}\" alt=\"Logo\">\n<h4>Confirm Your Email<\/h4>\n<p>We just sent you an email to confirm your subscription. To finsih signing up, please click the confirmation link in the email<\/p>\n<\/div>"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "rich_text_eRzheC": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_U66dwi": {
+          "type": "heading",
+          "settings": {
+            "heading": "Thank you for registration.",
+            "heading_size": "small"
+          }
+        },
+        "button_aTGaky": {
+          "type": "button",
+          "settings": {
+            "button_label": "Back to Homepage",
+            "button_link": "https:\/\/6d4b88-3.myshopify.com\/",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_U66dwi",
+        "button_aTGaky"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    }
+  },
+  "order": [
+    "custom_liquid_ybRqxz",
+    "main",
+    "rich_text_eRzheC"
+  ]
+}

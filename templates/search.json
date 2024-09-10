@@ -1,0 +1,25 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-search",
+      "settings": {
+        "image_ratio": "landscape",
+        "image_fit": "contain",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_desc": false,
+        "show_sku": false,
+        "article_show_tags": false,
+        "article_show_date": true,
+        "article_show_author": false,
+        "article_show_desc": false,
+        "enable_filtering": false,
+        "enable_sorting": false,
+        "columns_mobile": "1"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

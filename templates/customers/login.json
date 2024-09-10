@@ -1,0 +1,27 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-login",
+      "settings": {
+        "subtitle": "Marketing non-disclosure agreement scrum project alpha lean startup startup business plan user experience angel investor focus research.",
+        "image": "shopify:\/\/shop_images\/pexels-anna-shvets-5069180_1.jpg"
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "disabled": true,
+      "settings": {
+        "heading": "<p>Heading for subscribe form<\/p>",
+        "heading_animation": true,
+        "sub_title": "Subheading",
+        "newsletter_text": "<p>Additional text for subscribe form.<\/p>",
+        "button_style": "secondary",
+        "border_top": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "newsletter"
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "type": "footer",
+  "name": "t:sections.footer.settings.footer-group.label",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "footer-0": {
+          "type": "logo_info",
+          "settings": {
+            "logo_width": 160,
+            "logo_text": ""
+          }
+        },
+        "footer-1": {
+          "type": "link_list",
+          "disabled": true,
+          "settings": {
+            "heading": "Quick links",
+            "menu": "footer"
+          }
+        },
+        "footer-2": {
+          "type": "link_list",
+          "settings": {
+            "heading": "",
+            "menu": "footer-menu-2"
+          }
+        },
+        "footer-3": {
+          "type": "link_list",
+          "disabled": true,
+          "settings": {
+            "heading": "Quick links",
+            "menu": "footer"
+          }
+        },
+        "footer-4": {
+          "type": "localization",
+          "settings": {
+            "enable_country_selector": false,
+            "enable_language_selector": true,
+            "enable_subscribe_selector": true,
+            "subscribe_heading": ""
+          }
+        }
+      },
+      "block_order": [
+        "footer-0",
+        "footer-1",
+        "footer-2",
+        "footer-3",
+        "footer-4"
+      ],
+      "settings": {
+        "color_scheme": "background-4",
+        "show_border": false,
+        "bottom_menu": "footer-menu-2",
+        "show_social": true,
+        "enable_follow_on_shop": false,
+        "payment_enable": false,
+        "show_policy": false,
+        "store_name": "Nini Design"
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

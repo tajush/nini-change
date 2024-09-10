@@ -1,0 +1,32 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "17079899713ad51cc6": {
+      "type": "apps",
+      "blocks": {
+        "ang_photo_gallery_npg_gallery_PzzkAd": {
+          "type": "shopify:\/\/apps\/ang-photo-gallery\/blocks\/npg-gallery\/b61d21a4-682d-4f98-8422-14124808e1f7",
+          "settings": {
+            "gallery_code": "angcode_700",
+            "block_padding": 25
+          }
+        }
+      },
+      "block_order": [
+        "ang_photo_gallery_npg_gallery_PzzkAd"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "17079899713ad51cc6"
+  ]
+}

@@ -1,0 +1,199 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "slideshow_8LgQ4G": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_CQmYGt": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "background-3",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "large",
+            "description": "",
+            "show_button": true,
+            "button_style": "secondary",
+            "button_label": "",
+            "button_link": "",
+            "image": "shopify:\/\/shop_images\/089A0859_AB11.jpg",
+            "overlay_opacity": 0.4,
+            "slide_image_link": "shopify:\/\/products\/fitted-skirt-with-shorts"
+          }
+        }
+      },
+      "block_order": [
+        "slide_CQmYGt"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "light",
+        "full_width": false,
+        "height": "16\/9",
+        "enable_autoplay": false,
+        "slide_duration": 5
+      }
+    },
+    "single_image_qcDGTq": {
+      "type": "SingleImage",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/089A0859_AB11.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/089A0859_AB11.jpg",
+        "full_width": false,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "multicolumn_HERVfi": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_dHNKcc": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/089A913111.jpg",
+            "title": "",
+            "text": "",
+            "image_link": "shopify:\/\/products\/fitted-skirt-with-shorts"
+          }
+        },
+        "column_YacfBb": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/089A9909_B11.jpg",
+            "title": "",
+            "text": "",
+            "image_link": "shopify:\/\/products\/tie-neck-dress"
+          }
+        },
+        "column_j3JCJK": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/NINI_JULY17_4111.jpg",
+            "title": "",
+            "text": "",
+            "image_link": "shopify:\/\/products\/cropped-jacket"
+          }
+        },
+        "column_kWwzWq": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/089A9700_A_C11.jpg",
+            "title": "",
+            "text": "",
+            "image_link": "shopify:\/\/products\/knit-collared-top"
+          }
+        }
+      },
+      "block_order": [
+        "column_dHNKcc",
+        "column_YacfBb",
+        "column_j3JCJK",
+        "column_kWwzWq"
+      ],
+      "settings": {
+        "title": "",
+        "multicolumn_to_show_row": 4,
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "product_image_banner_84dJBy": {
+      "type": "product-image-banner",
+      "disabled": true,
+      "settings": {
+        "heading": "<p>Some title<\/p>",
+        "description": "Some description",
+        "button_link": "",
+        "button_label": "Link label",
+        "cover_image": "shopify:\/\/shop_images\/089A0859_AB11.jpg"
+      }
+    },
+    "image_with_text_4QtRUH": {
+      "type": "image-with-text",
+      "blocks": {
+        "author_jHErzQ": {
+          "type": "author",
+          "disabled": true,
+          "settings": {
+            "name": "Author name"
+          }
+        },
+        "author_wijKnY": {
+          "type": "author",
+          "disabled": true,
+          "settings": {
+            "name": "Author name"
+          }
+        },
+        "author_iwVEtW": {
+          "type": "author",
+          "disabled": true,
+          "settings": {
+            "name": "Author name"
+          }
+        }
+      },
+      "block_order": [
+        "author_jHErzQ",
+        "author_wijKnY",
+        "author_iwVEtW"
+      ],
+      "disabled": true,
+      "settings": {
+        "position": "center",
+        "heading": "<p>Some heading for this section<\/p>",
+        "image": "shopify:\/\/shop_images\/089A0859_AB11.jpg",
+        "height": "all-height",
+        "text": "<p>Description of your company, company history, company founders, and so on. There may be several paragraphs here.<\/p>",
+        "column_text": "Description of your company, company history, company founders in two columns. You can also add any text. Add text about whatever you want.",
+        "author_position": "Position of authors or any other text",
+        "layout": "image_last",
+        "border_top": false
+      }
+    },
+    "multicolumn_m9cCta": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_zcEphF": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/089A0859_AB11.jpg",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_zcEphF"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Multicolumn",
+        "multicolumn_to_show_row": 6,
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "button_label": "Button label",
+        "button_link": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slideshow_8LgQ4G",
+    "single_image_qcDGTq",
+    "multicolumn_HERVfi",
+    "product_image_banner_84dJBy",
+    "image_with_text_4QtRUH",
+    "multicolumn_m9cCta"
+  ]
+}

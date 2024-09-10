@@ -1,0 +1,309 @@
+.countdown {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+.countdown__bg, .countdown__placeholder {
+  position: absolute;
+  inset: 0;
+}
+.countdown__bg img,
+.countdown__bg svg, .countdown__placeholder img,
+.countdown__placeholder svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.countdown__placeholder {
+  background-color: rgb(var(--color-overlay), 0.7);
+}
+.countdown__placeholder svg {
+  fill: rgb(255, 255, 255);
+}
+.countdown__bg-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+.countdown__wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+  border: 0.1rem solid rgb(var(--color-base-outline-button-labels), 0.2);
+}
+@media (min-width: 990px) {
+  .countdown__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.countdown__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  padding: 4rem 2rem;
+  text-align: left;
+}
+@media (min-width: 750px) {
+  .countdown__content {
+    padding: 4rem;
+  }
+}
+@media (min-width: 990px) {
+  .countdown__content {
+    max-width: 46rem;
+  }
+}
+@media (min-width: 1360px) {
+  .countdown__content {
+    padding: 4rem 1.5rem 4rem 11rem;
+  }
+}
+.countdown__heading {
+  margin: 0;
+  color: rgb(var(--color-foreground-title));
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+.countdown__text {
+  font-size: 1.3rem;
+  line-height: 1.69;
+  color: rgb(var(--color-foreground-title), 0.6);
+  margin-top: 0.6rem;
+}
+@media (min-width: 750px) {
+  .countdown__text {
+    font-size: 1.4rem;
+  }
+}
+.countdown__button {
+  min-width: 17.2rem;
+  margin-top: 2.4rem;
+}
+.countdown__header {
+  margin: 0 0 2.4rem;
+}
+@media (min-width: 750px) {
+  .countdown__header {
+    margin: 0 0 4.8rem;
+  }
+}
+.countdown__main {
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+}
+@media (min-width: 1200px) {
+  .countdown__main {
+    width: auto;
+  }
+}
+.countdown__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  width: 25%;
+  min-height: 15rem;
+  padding: 3rem 1rem;
+  border-left: 0.1rem solid rgb(var(--color-base-outline-button-labels), 0.2);
+  border-top: 0.1rem solid rgb(var(--color-base-outline-button-labels), 0.2);
+}
+@media (min-width: 990px) {
+  .countdown__block {
+    border-top: 0;
+    padding: 2rem 1rem;
+    width: 14.5rem;
+    min-height: 22.3rem;
+  }
+}
+@media (min-width: 1200px) {
+  .countdown__block {
+    width: 17.6rem;
+  }
+}
+.countdown__block:first-child {
+  border-left: none;
+}
+@media (min-width: 990px) {
+  .countdown__block:first-child {
+    border-left: 0.1rem solid rgb(var(--color-base-outline-button-labels), 0.2);
+  }
+}
+.countdown__block_num {
+  white-space: nowrap;
+  padding: 1rem 0.5rem;
+}
+@media (min-width: 750px) {
+  .countdown__block_num {
+    padding: 1rem 3rem;
+  }
+}
+@media (min-width: 1200px) {
+  .countdown__block_num {
+    padding: 5.8rem 5rem;
+  }
+}
+.countdown .countdown_block_days,
+.countdown .countdown_block_hours,
+.countdown .countdown_block_minutes,
+.countdown .countdown_block_seconds {
+  margin: 0;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: rgb(var(--color-foreground-title));
+}
+.countdown .countdown_block_description {
+  margin: 0.2rem 0 0;
+  font-size: 1rem;
+  letter-spacing: -0.02em;
+  color: rgb(var(--color-foreground-title));
+}
+@media (min-width: 576px) {
+  .countdown .countdown_block_description {
+    margin: 0.8rem 0 0;
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 990px) {
+  .countdown .countdown_block_description {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .countdown .countdown_block_description {
+    margin: 1.6rem 0 0;
+  }
+}
+.countdown__header-title {
+  margin: 0;
+}
+.countdown__end-info {
+  display: none;
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+  padding: 0 2rem 4rem;
+}
+@media (min-width: 750px) {
+  .countdown__end-info {
+    padding: 0 4rem 4rem;
+  }
+}
+@media (min-width: 990px) {
+  .countdown__end-info {
+    width: auto;
+    padding: 2rem;
+    text-align: center;
+  }
+}
+.countdown__end-info h3,
+.countdown__end-info p {
+  margin: 0;
+  color: rgb(var(--color-foreground-title));
+}
+@media (min-width: 990px) {
+  .countdown__end-info-text {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+.countdown .italic {
+  font-style: italic;
+  position: relative;
+  font-feature-settings: "tnum" on, "lnum" on;
+}
+.countdown--overlay {
+  padding-top: 3.2rem;
+  padding-bottom: 3.2rem;
+}
+@media (min-width: 750px) {
+  .countdown--overlay {
+    min-height: 40rem;
+  }
+}
+@media (min-width: 990px) {
+  .countdown--overlay {
+    min-height: 55rem;
+    padding-top: 6.4rem;
+    padding-bottom: 6.4rem;
+  }
+  .countdown--overlay .countdown__content {
+    max-width: 32.8rem;
+  }
+}
+@media (min-width: 1200px) {
+  .countdown--overlay {
+    min-height: 60rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+}
+@media (min-width: 1600px) {
+  .countdown--overlay {
+    min-height: 78.1rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+}
+.countdown--overlay .countdown_block_days,
+.countdown--overlay .countdown_block_hours,
+.countdown--overlay .countdown_block_minutes,
+.countdown--overlay .countdown_block_seconds {
+  color: rgb(255, 255, 255);
+}
+.countdown--overlay .countdown_block_description {
+  color: rgb(255, 255, 255);
+}
+.countdown--overlay .countdown__wrapper {
+  border: none;
+  gap: 3rem;
+}
+@media (min-width: 990px) {
+  .countdown--overlay .countdown__wrapper {
+    justify-content: flex-start;
+  }
+}
+@media (min-width: 1200px) {
+  .countdown--overlay .countdown__wrapper {
+    gap: 16.6rem;
+  }
+}
+.countdown--overlay .countdown__content {
+  padding: 0;
+}
+.countdown--overlay .countdown__main {
+  border: 0.1rem solid rgba(255, 255, 255, 0.4);
+}
+.countdown--overlay .countdown__heading {
+  color: rgb(255, 255, 255);
+}
+.countdown--overlay .countdown__text {
+  color: rgba(255, 255, 255, 0.6);
+}
+.countdown--overlay .countdown__button {
+  box-shadow: 0 0 0 0.1rem rgba(255, 255, 255, var(--alpha-button-border));
+  color: rgb(255, 255, 255);
+}
+.countdown--overlay .countdown__button:hover {
+  box-shadow: 0 0 0 0.1rem rgba(var(--color-button-secondary), var(--alpha-button-border));
+}
+.countdown--overlay .countdown__block {
+  border-color: rgba(255, 255, 255, 0.4);
+}
+.countdown--overlay .countdown__block:first-child {
+  border-left: 0;
+}
+.countdown--overlay .countdown__end-info {
+  padding: 0;
+}
+.countdown--overlay .countdown__end-info h3,
+.countdown--overlay .countdown__end-info p {
+  color: rgb(255, 255, 255);
+}

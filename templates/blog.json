@@ -1,0 +1,30 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-blog",
+      "settings": {
+        "show_image": true,
+        "show_tags": false,
+        "show_date": true,
+        "show_author": true,
+        "show_excerpt": false
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "disabled": true,
+      "settings": {
+        "heading": "<p>Heading for subscribe form<\/p>",
+        "heading_animation": true,
+        "sub_title": "Subheading",
+        "newsletter_text": "<p>Additional text for subscribe form.<\/p>",
+        "button_style": "secondary",
+        "border_top": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "newsletter"
+  ]
+}

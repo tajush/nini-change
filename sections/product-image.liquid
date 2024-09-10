@@ -1,0 +1,49 @@
+{% comment %}
+  <!doctype html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Toggle Content</title>
+      <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+      <button id="toggleButton">Show Content</button>
+      <div id="content" class="hidden">
+        <p>This is the content that will be toggled.</p>
+      </div>
+
+      <script src="script.js"></script>
+    </body>
+  </html>
+
+  <style>
+     .hidden {
+        display: none;
+    }
+  </style>
+  <script>
+     document.getElementById('toggleButton').addEventListener('click', function() {
+        var content = document.getElementById('content');
+        if (content.classList.contains('hidden')) {
+            content.classList.remove('hidden');
+            this.textContent = 'Hide Content';
+        } else {
+            content.classList.add('hidden');
+            this.textContent = 'Show Content';
+        }
+    });
+  </script>
+  {% schema %}
+  {
+    "name": "Section name",
+    "settings": [],
+  "presets": [
+    {
+      "name": "product-image"
+
+    }
+  ]
+  }
+  {% endschema %}
+{% endcomment %}

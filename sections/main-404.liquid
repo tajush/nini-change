@@ -1,0 +1,72 @@
+{{ 'template-search.css' | asset_url | stylesheet_tag }}
+<link rel="stylesheet" href="{{ 'component-search.css' | asset_url }}" media="print" onload="this.media='all'">
+
+<noscript>{{ 'component-search.css' | asset_url | stylesheet_tag }}</noscript>
+
+<div class="template-404 container  center">
+  <div class="page-header">
+    <div class="page-header__inner">
+      <h1 class="main-page-title page-title title--page">
+        {{ 'templates.404.subtext' | t }}. {{ 'templates.404.title' | t }}
+      </h1>
+    </div>
+  </div>
+  {%- if settings.predictive_search_enabled -%}
+    <predictive-search data-loading-text="{{ 'accessibility.loading' | t }}">
+  {%- endif -%}
+    <div class="search-wrapper">
+      <form action="{{ routes.search_url }}" method="get" role="search" class="search search__form">
+        <p class="search__form-text">
+          {{ 'templates.404.text' | t }}
+        </p>
+        <div class="search__form-inner">
+          <div class="field">
+            <input 
+              class="search__input field__input" 
+              id="Search-In-Modal" 
+              type="search" 
+              name="q" 
+              value="{{ search.terms | escape }}" 
+              placeholder="{{ 'general.search.placeholder' | t }}"
+              {%- if settings.predictive_search_enabled -%}
+                role="combobox"
+                aria-expanded="false"
+                aria-owns="predictive-search-results-list"
+                aria-controls="predictive-search-results-list"
+                aria-haspopup="listbox"
+                aria-autocomplete="list"
+                autocorrect="off"
+                autocomplete="off"
+                autocapitalize="off"
+                spellcheck="false"
+              {%- endif -%}
+            >
+            <label class="field__label" for="Search-In-Modal">{{ 'general.search.search' | t }}
+            </label>
+            <input type="hidden" name="options[prefix]" value="last">
+
+            <button class="search__button button button--arrow button--primary-size button--secondary" aria-label="{{ 'general.search.search' | t }}">
+              <span>
+                {{ 'general.search.search' | t }}
+              </span>
+              {% render 'icon-button-arrow' %}
+            </button>
+
+            {%- if settings.predictive_search_enabled -%}
+              <div class="predictive-search predictive-search--search-template" tabindex="-1" data-predictive-search>
+                <div class="predictive-search__loading-state">
+                  <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                    <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                  </svg>
+                </div>
+              </div>
+              <span class="predictive-search-status visually-hidden" role="status" aria-hidden="true"></span>
+            {%- endif -%}
+          </div>
+        </div>
+      </form>
+    </div>
+    {%- if settings.predictive_search_enabled -%}
+		</predictive-search>
+		{%- endif -%}
+</div>

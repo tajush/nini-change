@@ -1,0 +1,82 @@
+{
+  "type": "header",
+  "name": "t:sections.header.settings.header-group.label",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "1",
+        "text": "For example, a test of the announcement of some news",
+        "link": ""
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "side": {
+          "type": "side",
+          "settings": {
+            "side_select": "cards",
+            "subheading": "Subheading",
+            "heading": "<p>Heading for subscribe form<\/p>",
+            "newsletter_text": "<p>Additional text for subscribe form.<\/p>",
+            "button_style": "secondary",
+            "show_social": true
+          }
+        },
+        "mega_menu_aNe3hL": {
+          "type": "mega_menu",
+          "settings": {
+            "mega_menu_trigger": "shop",
+            "mega_menu_header": "",
+            "select_collections": [
+
+            ],
+            "image": "collection"
+          }
+        }
+      },
+      "block_order": [
+        "side",
+        "mega_menu_aNe3hL"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "logo": "shopify:\/\/shop_images\/nini-black.svg",
+        "logo_2": "shopify:\/\/shop_images\/nini-white.svg",
+        "logo_width": 50,
+        "logo_position": "center",
+        "menu": "main-menu",
+        "menu_2": "main-menu",
+        "enable_country_selector": true,
+        "enable_language_selector": false,
+        "sticky_header_type": "on-scroll-up",
+        "show_collection_card": false,
+        "collection_list": [
+          "beach",
+          "beach-to-bubbles",
+          "bottoms",
+          "court-to-cocktails",
+          "dresses",
+          "jackets",
+          "new-arrivals",
+          "pants",
+          "rompers",
+          "sets",
+          "shop-all-beach",
+          "shop-all-sport"
+        ],
+        "show_articles": true,
+        "blog": "",
+        "show_image": true,
+        "show_date": true,
+        "show_author": true
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
+}

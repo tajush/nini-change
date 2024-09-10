@@ -1,0 +1,59 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-addresses",
+      "settings": {
+      }
+    },
+    "popular-products": {
+      "type": "popular-products",
+      "disabled": true,
+      "settings": {
+        "heading": "<p>You May be Interested<\/p>",
+        "link": "Explore",
+        "button_link": "",
+        "collection": "",
+        "products_limit": 3,
+        "border_top": false,
+        "image_ratio": "landscape",
+        "image_fit": "contain",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_desc": true,
+        "show_sku": false,
+        "columns_mobile": "1"
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "disabled": true,
+      "settings": {
+        "heading": "<p>Heading for subscribe form<\/p>",
+        "heading_animation": true,
+        "sub_title": "Subheading",
+        "newsletter_text": "<p>Additional text for subscribe form.<\/p>",
+        "button_style": "secondary",
+        "border_top": false
+      }
+    },
+    "image-collage": {
+      "type": "image-collage",
+      "disabled": true,
+      "settings": {
+        "sub_title": "Subheading",
+        "title": "<p> <em> Heading for <\/em> Image collage<\/p>",
+        "name_account": "For instance account name",
+        "desc_account": "For instance account followers",
+        "button_label": "Explore",
+        "button_link": "",
+        "button_style": "secondary"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "popular-products",
+    "newsletter",
+    "image-collage"
+  ]
+}

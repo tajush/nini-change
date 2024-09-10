@@ -1,0 +1,98 @@
+.multicolumn-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.6rem;
+  margin-bottom: 0;
+  padding: 0;
+}
+@media screen and (min-width: 990px) {
+  .multicolumn-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1360px) {
+  .multicolumn-list {
+    gap: 3.2rem;
+  }
+}
+@media screen and (min-width: 990px) {
+  .multicolumn-list--2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .multicolumn-list--3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1360px) {
+  .multicolumn-list--4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (min-width: 1360px) {
+  .multicolumn-list--6 {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2.4rem;
+  }
+}
+
+.multicolumn--border .multicolumn__wrapper {
+  padding: 5rem 0;
+  border-top: 0.3rem solid rgb(var(--color-foreground));
+  border-bottom: 0.3rem solid rgb(var(--color-foreground));
+}
+
+.multicolumn .slider-mobile-gutter:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+.multicolumn-card {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.multicolumn-card--image-five-width .multicolumn-card__image-wrapper {
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+
+.multicolumn-card--image-three-width .multicolumn-card__image-wrapper {
+  flex: 0 0 33%;
+  max-width: 33%;
+}
+
+.multicolumn-card--image-half-width .multicolumn-card__image-wrapper {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.multicolumn-card--image-full-width .multicolumn-card__image-wrapper {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.multicolumn-card .multicolumn-card__image-wrapper {
+  min-width: 5rem;
+}
+
+.multicolumn-card__info h2 {
+  text-align: center;
+  margin: 0 0 2rem 0;
+  font-size: var(--font-heading-h2-size)
+}
+
+.multicolumn .center .multicolumn-card {
+  align-items: center;
+}
+.multicolumn .center .multicolumn-card--image-full-width .multicolumn-card__image-wrapper {
+  width: 100%;
+}
+.multicolumn .center .multicolumn-card--image-half-width .multicolumn-card__image-wrapper {
+  width: 50%;
+}
+.multicolumn .center .multicolumn-card--image-three-width .multicolumn-card__image-wrapper {
+  width: 33%;
+}
+.multicolumn .center .multicolumn-card--image-five-width .multicolumn-card__image-wrapper {
+  width: 20%;
+}
