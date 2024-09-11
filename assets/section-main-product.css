@@ -26,7 +26,7 @@
 @media (min-width: 1200px) {
   .product__media-wrapper {
     width: 57%;
-    lex-grow: 1;
+    
   }
 }
 @media (min-width: 750px) {
@@ -81,7 +81,7 @@
   flex-wrap: wrap;
   align-items: flex-end;
   gap: 1.2rem;
-  margin-bottom: 2.4rem;
+  margin-bottom: 1.4rem;
 }
 .product__title {
   word-break: break-word;
@@ -130,7 +130,7 @@
 .product__additional {
   display: block;
   gap: 0.5rem;
-  padding: 3rem 0 1.5rem;
+  padding: 1rem 0 1.5rem;
   border-bottom: 0.1rem solid rgba(var(--color-base-text), 0.2);
   cursor: pointer;
   transition: var(--duration-default);
@@ -313,6 +313,7 @@
   border-left-color: rgb(var(--color-base-button-background));
 }
 .product__media-sublist .product__media {
+  background-color: transparent;
   position: relative;
   height: 0;
   padding-top: 100%;
@@ -331,7 +332,7 @@
 .product__media-subitem {
   width: 100%;
   overflow: hidden;
-  width: 86px !important;
+  width: 92px !important;
 }
 .product .is-selected.product__media-subitem .product__media {
   border-color: rgb(var(--color-base-button-background)) !important;
@@ -349,7 +350,7 @@
 }
 .product .price-wrapper {
   margin-top: 0;
-  margin-bottom: 2.8rem;
+  margin-bottom: .8rem;
   letter-spacing: -0.02em;
 }
 .product .price-item {
@@ -374,7 +375,7 @@
 }
 .product__pickup-availabilities {
   margin-top: 0;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 .product .share-buttons {
   margin-bottom: 3rem;
@@ -655,7 +656,7 @@
   margin-top: 0;
 }
 .product-form__controls-group {
-  margin-bottom: 2.4rem;
+  margin-bottom: .4rem;
 }
 .product-form__controls-group--zero-gap {
   gap: unset;
@@ -759,7 +760,7 @@
   display: flex;
   flex-direction: column;
   gap: 0.9rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 @media (min-width: 990px) {
   .product-form__buttons {

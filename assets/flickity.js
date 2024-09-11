@@ -8,6 +8,8 @@
  * https://flickity.metafizzy.co
  * Copyright 2015-2021 Metafizzy 
  */
+
+
 (function (e, i) {
 	if (typeof define == "function" && define.amd) {
 		define("jquery-bridget/jquery-bridget", ["jquery"], function (t) {
@@ -2965,3 +2967,5 @@
 	};
 	return i;
 });
+
+  
