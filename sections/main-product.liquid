@@ -32,7 +32,7 @@
 {%- endif -%} {% endcomment %}
 
 <section class="container" >
-  <div class="product {% if product.media.size > 0 %}row{% else %}product--no-media{% endif %}"  style=" margin-top:100px;">
+  <div class="product {% if product.media.size > 0 %}row{% else %}product--no-media{% endif %}"  style=" margin-top:100px;max-width: 1424px;">
     <div class="product__outer">
       {% if product.media.size > 0 %}
         <div
@@ -80,18 +80,18 @@
                     data-media-sub-id="{{ section.id }}-{{ media.id }}"
                   >
                     <div
-                      class="product__media"
+                      class="product__media "
                       style="                transform: rotate(-90deg);"
                     >
-                      <img
+                      <img class="main-image"
                         srcset="
                           {% if media.preview_image.width >= 288 %}{{ media.preview_image | img_url: '288x' }} 288w,{% endif %}
                           {% if media.preview_image.width >= 576 %}{{ media.preview_image | img_url: '576x' }} 576w,{% endif %}
                           {% if media.preview_image.width >= 550 %}{{ media.preview_image | img_url: '550x' }} 550w,{% endif %}
-                          {% if media.preview_image.width >= 1100 %}{{ media.preview_image | img_url: '1100x' }} 1100w{% endif %}
+                          {% if media.preview_image.width >= 1100 %}{{ media.preview_image | img_url: '550x' }} 1100w{% endif %}
                         "
                         src="{{ media | img_url: '550x550' }}"
-                        loading="eager"
+                        loading="lazy"
                         width="743"
                         height="743"
                         alt="{{ media.preview_image.alt | escape }}"
@@ -776,7 +776,7 @@
                   {% if media.preview_image.width >= 288 %}{{ media.preview_image | img_url: '288x' }} 288w,{% endif %}
                   {% if media.preview_image.width >= 576 %}{{ media.preview_image | img_url: '576x' }} 576w,{% endif %}
                   {% if media.preview_image.width >= 550 %}{{ media.preview_image | img_url: '550x' }} 550w,{% endif %}
-                  {% if media.preview_image.width >= 1100 %}{{ media.preview_image | img_url: '1100x' }} 1100w{% endif %}
+                  {% if media.preview_image.width >= 1100 %}{{ media.preview_image | img_url: '550x' }} 1100w{% endif %}
                 "
                 src="{{ media | img_url: '550x550' }}"
                 sizes="(min-width: 1200px) calc((1200px - 10rem) / 2), (min-width: 750px) calc((100vw - 11.5rem) / 2), calc(100vw - 4rem)"
@@ -838,6 +838,11 @@
   </product-modal>
 </section>
 <style>
+  .main-image {
+  width: 100%; /* Ensure full width */
+  height: auto; /* Maintain aspect ratio */
+}
+
       /* .hidden {
         display: none;
     } */
@@ -855,6 +860,29 @@
   }
 </style>
 {% javascript %}
+document.addEventListener('DOMContentLoaded', function() {
+  var images = document.querySelectorAll('.main-image');
+  var totalImages = images.length;
+  var loadedImages = 0;
+
+  images.forEach(function(image) {
+    image.onload = function() {
+      loadedImages++;
+      if (loadedImages === totalImages) {
+        // Initialize Flickity or slider
+        var elem = document.querySelector('.product__media-sublist');
+        var flkty = new Flickity(elem, {
+          asNavFor: '.product__media-list',
+          contain: true,
+          pageDots: false,
+          prevNextButtons: false,
+          cellAlign: 'left'
+        });
+      }
+    };
+  });
+});
+
 
   const product_collaps = document.querySelectorAll('#product_collaps_wrapper .product__additional');
   const collaps_des= document.getElementsByClassName('product__additional-description');
@@ -997,8 +1025,8 @@ $(document).ready(function () {
 			asNavFor: '.product__media-list',
 			contain: true,
 			pageDots: false,
-			prevNextButtons: false,
-			cellAlign: 'left'
+			prevNextButtons: false
+			
 		});
 	}
 })

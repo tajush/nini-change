@@ -332,7 +332,7 @@
 .product__media-subitem {
   width: 100%;
   overflow: hidden;
-  width: 92px !important;
+  width: 88px !important;
 }
 .product .is-selected.product__media-subitem .product__media {
   border-color: rgb(var(--color-base-button-background)) !important;
@@ -1092,7 +1092,7 @@ fieldset.product-form__input .form__label {
 
 .product__media-sublist {
   display: flex;
-  overflow: hidden;
+  overflow-x: hidden;
   margin-top: 10px;
 }
 .product__media-sublist.flickity-enabled {
