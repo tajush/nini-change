@@ -44,9 +44,9 @@
   margin-top: 3rem;
   margin-bottom: 2.2rem;
 }
-.rte figure > img {
+/* .rte figure > img {
   margin: 0;
-}
+} */
 .rte figcaption {
   font-size: 1rem;
   color: rgba(var(--color-foreground), 0.6);

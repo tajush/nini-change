@@ -10,6 +10,7 @@
  */
 
 
+  
 (function (e, i) {
 	if (typeof define == "function" && define.amd) {
 		define("jquery-bridget/jquery-bridget", ["jquery"], function (t) {
@@ -526,7 +527,7 @@
 			"translateX(" + this.parent.getPositionValue(i) + ")";
 	};
 	s.select = function () {
-		this.element.classList.add("is-selected");
+		// this.element.classList.add("is-selected");
 		this.element.removeAttribute("aria-hidden");
 	};
 	s.unselect = function () {
@@ -2542,8 +2543,8 @@
 		this.img.removeEventListener("error", this);
 		var i = this.flickity.getParentCell(this.img);
 		var n = i && i.element;
-		this.flickity.cellSizeChange(n);
-		this.img.classList.add(e);
+		// this.flickity.cellSizeChange(n);
+		// this.img.classList.add(e);
 		this.flickity.dispatchEvent("lazyLoad", t, n);
 	};
 	i.LazyLoader = r;
@@ -2599,13 +2600,14 @@
 	} else {
 		t.Flickity = e(t.Flickity, t.fizzyUIUtils);
 	}
-})(window, function t(n, s) {
+})
+(window, function t(n, s) {
 	n.createMethods.push("_createAsNavFor");
 	var e = n.prototype;
 	e._createAsNavFor = function () {
 		this.on("activate", this.activateAsNavFor);
 		this.on("deactivate", this.deactivateAsNavFor);
-		this.on("destroy", this.destroyAsNavFor);
+		// this.on("destroy", this.destroyAsNavFor);
 		var e = this.options.asNavFor;
 		if (!e) {
 			return;
@@ -2958,7 +2960,7 @@
 		var n = this;
 		function t(t, e) {
 			var i = n.getParentCell(e.img);
-			n.cellSizeChange(i && i.element);
+			// n.cellSizeChange(i && i.element);
 			if (!n.options.freeScroll) {
 				n.positionSliderAtSelected();
 			}

@@ -841,6 +841,7 @@
   .main-image {
   width: 100%; /* Ensure full width */
   height: auto; /* Maintain aspect ratio */
+  
 }
 
       /* .hidden {
@@ -850,14 +851,21 @@
       width:36%;transform: rotate(-270deg) scale(2.5);;
                   left: -78%;
     }
-    @media (max-width: 768px) {
+    @media (max-width: 900px) {
+    .side-image {
+      transform: rotate(-270deg) scale(2);
+    left: -77%;
+    margin-top: -17% !important;
+  }
+  }
+  /* @media (min-width: 768px and max-width:1000px) {
     .side-image {
      width: 331px;
-        transform: rotate(-270deg) scale(1);
+        transform: rotate(-270deg) scale(2);
         left: -21%;
         margin-top: -17% !important;
   }
-  }
+  } */
 </style>
 {% javascript %}
 document.addEventListener('DOMContentLoaded', function() {
@@ -875,8 +883,7 @@ document.addEventListener('DOMContentLoaded', function() {
           asNavFor: '.product__media-list',
           contain: true,
           pageDots: false,
-          prevNextButtons: false,
-          cellAlign: 'left'
+          prevNextButtons: false
         });
       }
     };
@@ -950,6 +957,7 @@ class ProductRecommendations extends HTMLElement {
 		super();
 
 		const handleIntersection = (entries, observer) => {
+      
 			if (!entries[0].isIntersecting) return;
 			observer.unobserve(this);
 
