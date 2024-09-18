@@ -23,6 +23,11 @@
     width: 50%;
   }
 }
+@media (min-width: 900px) and (max-width:1200px) {
+  .product__media-wrapper {
+    width: 114%;
+  }
+}
 @media (min-width: 1200px) {
   .product__media-wrapper {
     width: 57%;
@@ -332,7 +337,7 @@
 .product__media-subitem {
   width: 100%;
   overflow: hidden;
-  max-width: 88px !important;
+  max-width: 81px !important;
 }
 .product .is-selected.product__media-subitem .product__media {
   border-color: rgb(var(--color-base-button-background)) !important;
@@ -1093,7 +1098,12 @@ fieldset.product-form__input .form__label {
 .product__media-sublist {
   display: flex;
   overflow-x: hidden;
-  margin-top: 10px;
+  margin-top: 114px;
+}
+@media (max-width:400px) {
+  .product__media-sublist{
+    margin-top: 61px;
+  }
 }
 .product__media-sublist.flickity-enabled {
   display: block;

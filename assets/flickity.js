@@ -527,7 +527,7 @@
 			"translateX(" + this.parent.getPositionValue(i) + ")";
 	};
 	s.select = function () {
-		// this.element.classList.add("is-selected");
+		this.element.classList.add("is-selected");
 		this.element.removeAttribute("aria-hidden");
 	};
 	s.unselect = function () {
@@ -565,7 +565,7 @@
 	i.addCell = function (t) {
 		this.cells.push(t);
 		this.outerWidth += t.size.outerWidth;
-		this.height = Math.max(t.size.outerHeight, this.height);
+		// this.height = Math.max(t.size.outerHeight, this.height);
 		if (this.cells.length == 1) {
 			this.x = t.x;
 			var e = this.isOriginLeft ? "marginLeft" : "marginRight";
@@ -1006,13 +1006,13 @@
 		this.cellAlign = t ? t[this.originSide] : this.options.cellAlign;
 	};
 	v.setGallerySize = function () {
-		if (this.options.setGallerySize) {
-			var t =
-				this.options.adaptiveHeight && this.selectedSlide
-					? this.selectedSlide.height
-					: this.maxCellHeight;
-			this.viewport.style.height = t + "px";
-		}
+		// if (this.options.setGallerySize) {
+		// 	var t =
+		// 		this.options.adaptiveHeight && this.selectedSlide
+		// 			? this.selectedSlide.height
+		// 			: this.maxCellHeight;
+		// 	this.viewport.style.height = t + "px";
+		// }
 	};
 	v._getWrapShiftCells = function () {
 		if (!this.options.wrapAround) {

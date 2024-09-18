@@ -43,7 +43,7 @@
           "
          
         >
-          <div class="product__media-list-wrapper" style="display:flex">
+          <div class="product__media-list-wrapper" style="display:flex;height:100% !important;">
             <ul
               class="product__media-sublist js-media-sublist no-js-hidden side-image"
               role="list"
@@ -101,7 +101,7 @@
                 {%- endunless -%}
               {%- endfor -%}
             </ul>
-            <div class="product__media-list-wrapper-outer" style="width:54%;margin-top: -41px;">
+            <div class="product__media-list-wrapper-outer" style="width:54%;">
               <ul class="product__media-list list-unstyled js-media-list no-js-hidden" role="list">
                 {%- liquid
                   assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src'
@@ -849,15 +849,35 @@
     } */
     .side-image{
       width:36%;transform: rotate(-270deg) scale(2.5);;
-                  left: -78%;
+                  left: -67%;
     }
     @media (max-width: 900px) {
     .side-image {
       transform: rotate(-270deg) scale(2);
-    left: -77%;
-    margin-top: -17% !important;
+    left: -17%;
+    margin-bottom: 56% !important;
   }
   }
+  @media (max-width:400px) {
+    .side-image {
+      
+    left: -39%;
+    margin-bottom: 19% !important;
+  }
+  }
+  @media (max-width:550px) {
+    .side-image {
+      
+    left: -39%;
+    margin-bottom: 19% !important;
+  }
+  }
+  @media (min-width: 900px) and (max-width: 1400px) {
+  .side-image{
+    left:-526px
+  }
+}
+
   /* @media (min-width: 768px and max-width:1000px) {
     .side-image {
      width: 331px;
