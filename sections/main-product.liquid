@@ -31,7 +31,7 @@
   >
 {%- endif -%} {% endcomment %}
 
-<section class="container" >
+<section class="container margin-btm" >
   <div class="product {% if product.media.size > 0 %}row{% else %}product--no-media{% endif %}"  style=" margin-top:100px;max-width: 1424px;">
     <div class="product__outer">
       {% if product.media.size > 0 %}
@@ -511,7 +511,8 @@
                         {%- endif -%}
                       </h2>
                       <div
-                        style="margin-top: 14px;"
+                        style="margin-top: 14px;max-width: 400px;
+    position: absolute;background:#EBEBEB;z-index:9999;padding: 10px;"
                         class="product__additional-description rte content  "
                         {% if block.settings.tab_opened %}
                           style="display: block;"
@@ -923,10 +924,17 @@ document.addEventListener('DOMContentLoaded', function() {
       if(collaps_content.classList.contains('hidden')){
         collaps_content.classList.remove('hidden');
         collaps_content.style.transition='0.25s all'
+        
         arrowIcon.style.transform='rotate(90deg)';
+        const marginbtm = document.querySelector('.margin-btm');
+marginbtm.style.marginBottom = '1100px';
+
       }else{
         collaps_content.classList.add('hidden');
         arrowIcon.style.transform='rotate(0deg)';
+        const marginbtm = document.querySelector('.margin-btm');
+marginbtm.style.marginBottom = '';
+
       }
       
     }
