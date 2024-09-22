@@ -850,7 +850,7 @@
     } */
     .side-image{
       width:36%;transform: rotate(-270deg) scale(2.5);;
-                  left: -67%;
+                  left: -75%;
     }
     @media (max-width: 900px) {
     .side-image {
@@ -913,9 +913,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
   const product_collaps = document.querySelectorAll('#product_collaps_wrapper .product__additional');
-  const collaps_des= document.getElementsByClassName('product__additional-description');
+            const collaps_des= document.getElementsByClassName('product__additional-description');
   const collaps_items = Array.from(product_collaps);
   collaps_items.forEach(item=>{item.addEventListener('click', (e) => {
+  console.log(item);
     if(item.classList.contains('active')){
       const collaps_content = item.childNodes[3];
       console.log(collaps_items)

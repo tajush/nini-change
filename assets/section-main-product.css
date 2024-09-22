@@ -1098,7 +1098,7 @@ fieldset.product-form__input .form__label {
 .product__media-sublist {
   display: flex;
   overflow-x: hidden;
-  margin-top: 114px;
+  margin-top: 81px;
 }
 @media (max-width:400px) {
   .product__media-sublist{
