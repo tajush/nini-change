@@ -46,3 +46,6 @@
   top: -2rem;
   visibility: hidden;
 }
+.newsletter-form__message--success.form__message{
+  color: aliceblue;
+}

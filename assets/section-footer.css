@@ -62,7 +62,7 @@
 
 @media screen and (min-width: 990px) {
   .footer__content-top {
-    padding-top: 8rem;
+    padding-top: 1rem;
     padding-bottom: 8rem;
   }
   .footer__blocks-wrapper {

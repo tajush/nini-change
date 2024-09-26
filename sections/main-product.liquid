@@ -889,6 +889,30 @@
   } */
 </style>
 {% javascript %}
+document.addEventListener("DOMContentLoaded", function () {
+  var elem = document.querySelector('.js-media-sublist');
+  
+  // Initialize Flickity
+  var flkty = new Flickity(elem, {
+    cellAlign: 'left',
+    contain: true,
+    pageDots: false,
+    wrapAround: true // For continuous looping
+  });
+
+  // Hook up buttons
+  var prevButton = document.getElementById('prev-button');
+  var nextButton = document.getElementById('next-button');
+
+  prevButton.addEventListener('click', function () {
+    flkty.previous();
+  });
+
+  nextButton.addEventListener('click', function () {
+    flkty.next();
+  });
+});
+
 document.addEventListener('DOMContentLoaded', function() {
   var images = document.querySelectorAll('.main-image');
   var totalImages = images.length;

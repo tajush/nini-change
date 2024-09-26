@@ -209,7 +209,7 @@
                           {%- endform -%}
                         </noscript>
                         <localization-form>
-                          {%- form 'localization', id: 'FooterLanguageForm', class: 'localization-form' -%}
+                          {% comment %} {%- form 'localization', id: 'FooterLanguageForm', class: 'localization-form' -%}
                             <div class="no-js-hidden">
                               <div class="disclosure">
                                 <button
@@ -246,7 +246,7 @@
                               </div>
                               <input type="hidden" name="locale_code" value="{{ localization.language.iso_code }}">
                             </div>
-                          {%- endform -%}
+                          {%- endform -%} {% endcomment %}
                         </localization-form>
                       {%- endif -%}
 
@@ -261,7 +261,7 @@
                           </div>
                           <div class="newsletter__inner">
                             <div class="newsletter__form">
-                              {% form 'customer', class: 'newsletter-form' %}
+                              {% comment %} {% form 'customer', class: 'newsletter__form' %}
                                 <div class="newsletter-form__inner">
                                   <input type="hidden" name="contact[tags]" value="newsletter">
                                   <div class="newsletter-form__field-wrapper">
@@ -308,7 +308,7 @@
                                     <span>{{ 'newsletter.button_label' | t }}</span> {% render 'icon-button-arrow' %}
                                   </button>
                                 </div>
-                                <!-- {%- if form.posted_successfully? -%}
+                                {%- if form.posted_successfully? -%}
                                   <h3
                                     class="newsletter-form__message newsletter-form__message--success form__message"
                                     id="Newsletter-success--{{ section.id }}"
@@ -318,11 +318,11 @@
                                     {% render 'icon-success' -%}
                                     {{- 'newsletter.success' | t }}
                                   </h3>
-                                {%- endif -%} -->
+                                {%- endif -%} 
                                 {%- if form.posted_successfully? -%}
   <script>window.location.href = "/pages/confirm-subscription?success=true";</script>
 {%- endif -%}
-                              {% endform %}
+                              {% endform %} {% endcomment %}
                             </div>
                           </div>
                         </div>

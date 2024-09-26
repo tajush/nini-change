@@ -5,8 +5,8 @@
       "settings": {
         "add_word": "Collection",
         "show_word": false,
-        "show_collection_description": true,
-        "show_collection_image": true,
+        "show_collection_description": false,
+        "show_collection_image": false,
         "image_width_1": 50,
         "image_width_2": 50
       }

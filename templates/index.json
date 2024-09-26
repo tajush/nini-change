@@ -104,18 +104,6 @@
         "button_link": ""
       }
     },
-    "newsletter": {
-      "type": "newsletter",
-      "disabled": true,
-      "settings": {
-        "heading": "<p>Heading for subscribe form<\/p>",
-        "heading_animation": true,
-        "sub_title": "Subheading",
-        "newsletter_text": "<p>Additional text for subscribe form.<\/p>",
-        "button_style": "secondary",
-        "border_top": false
-      }
-    },
     "multicolumn_GM9Ub4": {
       "type": "multicolumn",
       "blocks": {
@@ -167,28 +155,6 @@
         "ang_photo_gallery_npg_gallery_LMKjUK"
       ],
       "disabled": true,
-      "settings": {
-        "include_margins": true
-      }
-    },
-    "1709052581b56fbf42": {
-      "type": "apps",
-      "blocks": {
-        "instafeed_app_block_cyamqg": {
-          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
-          "settings": {
-            "title": "Follow us on Instagram",
-            "title_color": "",
-            "title_size": 32,
-            "alignment": "center",
-            "background_color": "",
-            "html_area": ""
-          }
-        }
-      },
-      "block_order": [
-        "instafeed_app_block_cyamqg"
-      ],
       "settings": {
         "include_margins": true
       }
@@ -873,8 +839,44 @@
     },
     "custom_liquid_47eBfq": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "<div class=\"klaviyo-form-UEsuzC\"><\/div>"
+      }
+    },
+    "1709052581b56fbf42": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_cyamqg": {
+          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "Follow us on Instagram",
+            "title_color": "",
+            "title_size": 32,
+            "alignment": "center",
+            "margin_top": 10,
+            "margin_bottom": 10,
+            "background_color": "",
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_cyamqg"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "settings": {
+        "heading": "",
+        "heading_animation": false,
+        "sub_title": "",
+        "newsletter_text": "",
+        "button_style": "primary",
+        "border_top": false
       }
     }
   },
@@ -882,10 +884,8 @@
     "video_banner_HktMGD",
     "slideshow_zqyfy3",
     "multicolumn_PQgKg6",
-    "newsletter",
     "multicolumn_GM9Ub4",
     "1707983829e22ef8a7",
-    "1709052581b56fbf42",
     "slideshow_9GQXrc",
     "image_carousel_ePNea6",
     "testimonials_4CEHLp",
@@ -900,6 +900,8 @@
     "slideshow1_dGmyKE",
     "multicolumn_tyNW4N",
     "rich_text_8qHYNL",
-    "custom_liquid_47eBfq"
+    "custom_liquid_47eBfq",
+    "1709052581b56fbf42",
+    "newsletter"
   ]
 }

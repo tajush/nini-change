@@ -7,6 +7,10 @@
 		<meta name="theme-color" content="">
 		<link rel="canonical" href="{{ canonical_url }}">
 		<link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+<!-- Flickity CSS -->
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+
 
 		{%- if settings.favicon != blank -%}
 			<link rel="icon" type="image/png" href="{{ settings.favicon | img_url: '32x32' }}">
@@ -344,5 +348,7 @@ document.getElementById("newsletter").addEventListener("click", function() {
 			></script>
 		{%- endif -%}
 		<script src="{{ 'custom-dropdown.js' | asset_url }}" defer="defer"></script>
+		<!-- Flickity JS -->
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 </html>
