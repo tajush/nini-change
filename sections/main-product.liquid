@@ -32,7 +32,8 @@
 {%- endif -%} {% endcomment %}
 
 <section class="container margin-btm" >
-  <div class="product {% if product.media.size > 0 %}row{% else %}product--no-media{% endif %}"  style=" margin-top:100px;max-width: 1424px;">
+  <div class="product-height product {% if product.media.size > 0 %}row{% else %}product--no-media{% endif %}"  style=" margin-top:100px;max-width: 1424px;  
+">
     <div class="product__outer">
       {% if product.media.size > 0 %}
         <div
@@ -43,7 +44,7 @@
           "
          
         >
-          <div class="product__media-list-wrapper" style="display:flex;height:100% !important;">
+          <div class="product__media-list-wrapper wrapper-size" style="display:flex;">
             <ul
               class="product__media-sublist js-media-sublist no-js-hidden side-image"
               role="list"
@@ -101,7 +102,7 @@
                 {%- endunless -%}
               {%- endfor -%}
             </ul>
-            <div class="product__media-list-wrapper-outer" style="width:54%;">
+            <div class="product__media-list-wrapper-outer wrapper-outer" >
               <ul class="product__media-list list-unstyled js-media-list no-js-hidden" role="list">
                 {%- liquid
                   assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src'
@@ -249,7 +250,7 @@
                     {%- if product.compare_at_price > product.price %} price--on-sale {% endif -%}
                   "
                 >
-                  <h1 class="product__title h2" {{ block.shopify_attributes }}>
+                  <h1 class="product__title h2 product-title" {{ block.shopify_attributes }}data-product-title="{{ product.title }}">
                     {{ product.title | escape }}
                   </h1>
                 </div>
@@ -849,7 +850,7 @@
         display: none;
     } */
     .side-image{
-      width:36%;transform: rotate(-270deg) scale(2.5);;
+      width:36%;transform: rotate(-270deg) scale(2.5);
                   left: -75%;
     }
     @media (max-width: 900px) {
@@ -873,12 +874,31 @@
     margin-bottom: 19% !important;
   }
   }
-  @media (min-width: 900px) and (max-width: 1400px) {
+  /* @media (min-width: 1000px)  {
   .side-image{
-    left:-526px
+    left:-123%
   }
+} */
+@media (min-width: 700px) {
+    .side-image {
+        left: -993px;
+    }
 }
-
+.product-height{
+  height: 691px;
+}
+@media (min-width:900px) {
+    .product-height {
+      height: 791px;
+    
+  }}
+  .wrapper-size{
+    height:100% !important;
+  }
+  @media (min-width: 900px) {
+    .wrapper-size {
+      height:127% !important;
+  }}
   /* @media (min-width: 768px and max-width:1000px) {
     .side-image {
      width: 331px;
@@ -887,8 +907,43 @@
         margin-top: -17% !important;
   }
   } */
+   .wrapper-outer{
+    width:54%;
+   }
+   @media (min-width: 900px) {
+    .wrapper-outer {
+      width:60%;
+  }
 </style>
 {% javascript %}
+document.addEventListener('DOMContentLoaded', function () {
+  const productTitle = document.querySelector('.product-title'); // Product title element
+  const colorRadios = document.querySelectorAll('input[name^="Color-"]'); // Select all color radio buttons
+
+  if (colorRadios && productTitle) {
+    colorRadios.forEach(radio => {
+      radio.addEventListener('change', function (event) {
+        const selectedColor = event.target.value; // Get the value of the selected color (e.g., "Beige")
+        const variantLink = event.target.getAttribute('data-variant-link'); // Optional: get the link to the variant if needed
+
+        // Fetch product variant data via Ajax
+        fetch(`${window.location.pathname}.js`)
+          .then(response => response.json())
+          .then(product => {
+            // Find the variant that matches the selected color
+            const selectedVariant = product.variants.find(variant => variant.option1 === selectedColor);
+
+            if (selectedVariant) {
+              // Update the product title with the selected color or variant title
+              productTitle.innerHTML = `${product.title} - ${selectedColor}`;
+            }
+          })
+          .catch(error => console.error('Error fetching product variant data:', error));
+      });
+    });
+  }
+});
+
 document.addEventListener("DOMContentLoaded", function () {
   var elem = document.querySelector('.js-media-sublist');
   

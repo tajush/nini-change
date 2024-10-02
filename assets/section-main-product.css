@@ -1097,12 +1097,21 @@ fieldset.product-form__input .form__label {
 
 .product__media-sublist {
   display: flex;
-  overflow-x: hidden;
-  margin-top: 81px;
+  /* overflow-x: hidden; */
+  margin-top: 118px;
 }
+@media (min-width: 900px) {
+  .product__media-sublist {
+    margin-top: -87px;
+}}
 @media (max-width:400px) {
   .product__media-sublist{
     margin-top: 61px;
+  }
+}
+@media (min-width:400px) and (max-width:900) {
+  .product__media-sublist{
+    margin-top: -129px;
   }
 }
 .product__media-sublist.flickity-enabled {

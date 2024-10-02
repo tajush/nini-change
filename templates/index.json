@@ -837,6 +837,17 @@
         "full_width": true
       }
     },
+    "newsletter": {
+      "type": "newsletter",
+      "settings": {
+        "heading": "",
+        "heading_animation": false,
+        "sub_title": "",
+        "newsletter_text": "",
+        "button_style": "primary",
+        "border_top": false
+      }
+    },
     "custom_liquid_47eBfq": {
       "type": "custom-liquid",
       "disabled": true,
@@ -854,8 +865,8 @@
             "title_color": "",
             "title_size": 32,
             "alignment": "center",
-            "margin_top": 10,
-            "margin_bottom": 10,
+            "margin_top": 0,
+            "margin_bottom": 0,
             "background_color": "",
             "html_area": ""
           }
@@ -865,18 +876,45 @@
         "instafeed_app_block_cyamqg"
       ],
       "settings": {
-        "include_margins": true
+        "include_margins": false
       }
     },
-    "newsletter": {
-      "type": "newsletter",
+    "rich_text_L4AHFR": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_9DL3GA": {
+          "type": "heading",
+          "settings": {
+            "heading": "Dive in and enjoy 10% off",
+            "heading_size": "medium"
+          }
+        },
+        "text_YDDHkw": {
+          "type": "text",
+          "settings": {
+            "text": "<p>off when you sign up for text and email! <\/p><p>Sign up for emails and be the first to know about new collections, special offers, and much more.<\/p>"
+          }
+        },
+        "button_MU68jk": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Now",
+            "button_link": "shopify:\/\/collections",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_9DL3GA",
+        "text_YDDHkw",
+        "button_MU68jk"
+      ],
+      "custom_css": [
+        ".rich-text {background: #282828 !important;}"
+      ],
       "settings": {
-        "heading": "",
-        "heading_animation": false,
-        "sub_title": "",
-        "newsletter_text": "",
-        "button_style": "primary",
-        "border_top": false
+        "color_scheme": "inverse",
+        "full_width": true
       }
     }
   },
@@ -902,6 +940,7 @@
     "rich_text_8qHYNL",
     "custom_liquid_47eBfq",
     "1709052581b56fbf42",
-    "newsletter"
+    "newsletter",
+    "rich_text_L4AHFR"
   ]
 }
