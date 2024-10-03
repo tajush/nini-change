@@ -913,9 +913,11 @@
    @media (min-width: 900px) {
     .wrapper-outer {
       width:60%;
-  }
+  }}
+  
 </style>
 {% javascript %}
+
 document.addEventListener('DOMContentLoaded', function () {
   const productTitle = document.querySelector('.product-title'); // Product title element
   const colorRadios = document.querySelectorAll('input[name^="Color-"]'); // Select all color radio buttons
@@ -945,7 +947,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  var elem = document.querySelector('.js-media-sublist');
+  var elem = document.querySelector('.js-media-sublist.no-js-hidden');
   
   // Initialize Flickity
   var flkty = new Flickity(elem, {
@@ -968,27 +970,27 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-  var images = document.querySelectorAll('.main-image');
-  var totalImages = images.length;
-  var loadedImages = 0;
+// document.addEventListener('DOMContentLoaded', function() {
+//   var images = document.querySelectorAll('.main-image');
+//   var totalImages = images.length;
+//   var loadedImages = 0;
 
-  images.forEach(function(image) {
-    image.onload = function() {
-      loadedImages++;
-      if (loadedImages === totalImages) {
-        // Initialize Flickity or slider
-        var elem = document.querySelector('.product__media-sublist');
-        var flkty = new Flickity(elem, {
-          asNavFor: '.product__media-list',
-          contain: true,
-          pageDots: false,
-          prevNextButtons: false
-        });
-      }
-    };
-  });
-});
+//   images.forEach(function(image) {
+//     image.onload = function() {
+//       loadedImages++;
+//       if (loadedImages === totalImages) {
+//         // Initialize Flickity or slider
+//         var elem = document.querySelector('.product__media-sublist');
+//         var flkty = new Flickity(elem, {
+//           asNavFor: '.product__media-list',
+//           contain: true,
+//           pageDots: false,
+//           prevNextButtons: false
+//         });
+//       }
+//     };
+//   });
+// });
 
 
   const product_collaps = document.querySelectorAll('#product_collaps_wrapper .product__additional');
