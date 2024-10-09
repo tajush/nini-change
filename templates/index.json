@@ -837,17 +837,6 @@
         "full_width": true
       }
     },
-    "newsletter": {
-      "type": "newsletter",
-      "settings": {
-        "heading": "",
-        "heading_animation": false,
-        "sub_title": "",
-        "newsletter_text": "",
-        "button_style": "primary",
-        "border_top": false
-      }
-    },
     "custom_liquid_47eBfq": {
       "type": "custom-liquid",
       "disabled": true,
@@ -877,6 +866,17 @@
       ],
       "settings": {
         "include_margins": false
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "settings": {
+        "heading": "",
+        "heading_animation": false,
+        "sub_title": "",
+        "newsletter_text": "",
+        "button_style": "primary",
+        "border_top": false
       }
     },
     "rich_text_L4AHFR": {
@@ -909,6 +909,7 @@
         "text_YDDHkw",
         "button_MU68jk"
       ],
+      "disabled": true,
       "custom_css": [
         ".rich-text {background: #282828 !important;}"
       ],

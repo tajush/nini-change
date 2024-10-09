@@ -874,16 +874,16 @@
     margin-bottom: 19% !important;
   }
   }
-  /* @media (min-width: 1000px)  {
+   @media (min-width: 1000px)  {
   .side-image{
-    left:-123%
+    left:-153%
   }
-} */
-@media (min-width: 700px) {
+} 
+/* @media (min-width: 700px) {
     .side-image {
         left: -993px;
     }
-}
+} */
 .product-height{
   height: 691px;
 }
@@ -923,31 +923,43 @@ document.addEventListener('DOMContentLoaded', function () {
   const colorRadios = document.querySelectorAll('input[name^="Color-"]'); // Select all color radio buttons
 
   if (colorRadios && productTitle) {
+    // Function to update the product title with the selected color
+    function updateProductTitle(selectedColor) {
+      // Fetch product variant data via Ajax
+      fetch(`${window.location.pathname}.js`)
+        .then(response => response.json())
+        .then(product => {
+          // Find the variant that matches the selected color
+          const selectedVariant = product.variants.find(variant => variant.option1 === selectedColor);
+
+          if (selectedVariant) {
+            // Update the product title with the selected color in uppercase
+            productTitle.innerHTML = `${product.title}  ${"IN" + " "+selectedColor.toUpperCase()}`;
+          }
+        })
+        .catch(error => console.error('Error fetching product variant data:', error));
+    }
+
+    // Check if there's a default checked radio button and update the title accordingly
+    const defaultCheckedRadio = document.querySelector('input[name^="Color-"]:checked');
+    if (defaultCheckedRadio) {
+      const defaultColor = defaultCheckedRadio.value; // Get the default color value
+      updateProductTitle(defaultColor); // Update title with the default color
+    }
+
+    // Add change event listeners for color radio buttons
     colorRadios.forEach(radio => {
       radio.addEventListener('change', function (event) {
-        const selectedColor = event.target.value; // Get the value of the selected color (e.g., "Beige")
-        const variantLink = event.target.getAttribute('data-variant-link'); // Optional: get the link to the variant if needed
-
-        // Fetch product variant data via Ajax
-        fetch(`${window.location.pathname}.js`)
-          .then(response => response.json())
-          .then(product => {
-            // Find the variant that matches the selected color
-            const selectedVariant = product.variants.find(variant => variant.option1 === selectedColor);
-
-            if (selectedVariant) {
-              // Update the product title with the selected color or variant title
-              productTitle.innerHTML = `${product.title} - ${selectedColor}`;
-            }
-          })
-          .catch(error => console.error('Error fetching product variant data:', error));
+        const selectedColor = event.target.value; // Get the value of the selected color
+        updateProductTitle(selectedColor); // Update title with the selected color
       });
     });
   }
 });
 
+
 document.addEventListener("DOMContentLoaded", function () {
-  var elem = document.querySelector('.js-media-sublist.no-js-hidden');
+  var elem = document.querySelector('.js-media-sublist');
   
   // Initialize Flickity
   var flkty = new Flickity(elem, {
