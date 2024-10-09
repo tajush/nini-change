@@ -921,66 +921,75 @@
 document.addEventListener('DOMContentLoaded', function () {
   const productTitle = document.querySelector('.product-title'); // Product title element
   const colorRadios = document.querySelectorAll('input[name^="Color-"]'); // Select all color radio buttons
+  let flkty; // Define Flickity instance
 
-  if (colorRadios && productTitle) {
-    // Function to update the product title with the selected color
-    function updateProductTitle(selectedColor) {
-      // Fetch product variant data via Ajax
-      fetch(`${window.location.pathname}.js`)
-        .then(response => response.json())
-        .then(product => {
-          // Find the variant that matches the selected color
-          const selectedVariant = product.variants.find(variant => variant.option1 === selectedColor);
-
-          if (selectedVariant) {
-            // Update the product title with the selected color in uppercase
-            productTitle.innerHTML = `${product.title}  ${"IN" + " "+selectedColor.toUpperCase()}`;
-          }
-        })
-        .catch(error => console.error('Error fetching product variant data:', error));
-    }
-
-    // Check if there's a default checked radio button and update the title accordingly
-    const defaultCheckedRadio = document.querySelector('input[name^="Color-"]:checked');
-    if (defaultCheckedRadio) {
-      const defaultColor = defaultCheckedRadio.value; // Get the default color value
-      updateProductTitle(defaultColor); // Update title with the default color
-    }
-
-    // Add change event listeners for color radio buttons
-    colorRadios.forEach(radio => {
-      radio.addEventListener('change', function (event) {
-        const selectedColor = event.target.value; // Get the value of the selected color
-        updateProductTitle(selectedColor); // Update title with the selected color
-      });
+  // Function to initialize Flickity
+  function initializeFlickity() {
+    const elem = document.querySelector('.js-media-sublist');
+    
+    // Initialize Flickity
+    flkty = new Flickity(elem, {
+      cellAlign: 'left',
+      contain: true,
+      pageDots: false,
+      wrapAround: true // For continuous looping
     });
+
+    // Hook up buttons
+    const prevButton = document.getElementById('prev-button');
+    const nextButton = document.getElementById('next-button');
+
+    if (prevButton && nextButton) {
+      prevButton.addEventListener('click', function () {
+        flkty.previous();
+      });
+
+      nextButton.addEventListener('click', function () {
+        flkty.next();
+      });
+    }
   }
+
+  // Function to update the product title with the selected color
+  function updateProductTitle(selectedColor) {
+    // Fetch product variant data via Ajax
+    fetch(`${window.location.pathname}.js`)
+      .then(response => response.json())
+      .then(product => {
+        // Find the variant that matches the selected color
+        const selectedVariant = product.variants.find(variant => variant.option1 === selectedColor);
+
+        if (selectedVariant) {
+          // Update the product title with the selected color in uppercase
+          productTitle.innerHTML = `${product.title} IN ${selectedColor.toUpperCase()}`;
+          
+          // Reinitialize Flickity after updating the title
+          flkty.destroy(); // Destroy the previous Flickity instance
+          initializeFlickity(); // Re-initialize Flickity to ensure buttons are present
+        }
+      })
+      .catch(error => console.error('Error fetching product variant data:', error));
+  }
+
+  // Check if there's a default checked radio button and update the title accordingly
+  const defaultCheckedRadio = document.querySelector('input[name^="Color-"]:checked');
+  if (defaultCheckedRadio) {
+    const defaultColor = defaultCheckedRadio.value; // Get the default color value
+    updateProductTitle(defaultColor); // Update title with the default color
+  }
+
+  // Add change event listeners for color radio buttons
+  colorRadios.forEach(radio => {
+    radio.addEventListener('change', function (event) {
+      const selectedColor = event.target.value; // Get the value of the selected color
+      updateProductTitle(selectedColor); // Update title with the selected color
+    });
+  });
+
+  // Initialize Flickity initially
+  initializeFlickity();
 });
 
-
-document.addEventListener("DOMContentLoaded", function () {
-  var elem = document.querySelector('.js-media-sublist');
-  
-  // Initialize Flickity
-  var flkty = new Flickity(elem, {
-    cellAlign: 'left',
-    contain: true,
-    pageDots: false,
-    wrapAround: true // For continuous looping
-  });
-
-  // Hook up buttons
-  var prevButton = document.getElementById('prev-button');
-  var nextButton = document.getElementById('next-button');
-
-  prevButton.addEventListener('click', function () {
-    flkty.previous();
-  });
-
-  nextButton.addEventListener('click', function () {
-    flkty.next();
-  });
-});
 
 // document.addEventListener('DOMContentLoaded', function() {
 //   var images = document.querySelectorAll('.main-image');
