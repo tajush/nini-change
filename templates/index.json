@@ -14,7 +14,7 @@
         "show_view_all": true,
         "button_label": "Shop Now",
         "button_style": "primary",
-        "button_link": "shopify:\/\/collections",
+        "button_link": "shopify:\/\/collections\/shop-all-sport",
         "video": "shopify:\/\/files\/videos\/NINIUltraHD.mp4",
         "video_ratio": "adapt",
         "video_fit": "cover",
