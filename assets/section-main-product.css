@@ -1104,14 +1104,6 @@ fieldset.product-form__input .form__label {
   .product__media-sublist {
     margin-top: -233px;
 }}
-@media (min-width: 901px) and (max-width:1099px) {
-  .product__media-sublist {
-    margin-top: -318px;
-}}
-@media (min-width: 111px) and (max-width:1200px) {
-  .product__media-sublist {
-    margin-top: -343px;
-}}
 @media (max-width:400px) {
   .product__media-sublist{
     margin-top: 61px;

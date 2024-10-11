@@ -887,17 +887,17 @@
 }  */
 @media (min-width: 1000px)and (max-width: 1100px)  {
   .side-image{
-    left: -1518px ;
+    left: -1287px ;
   }
 } 
 @media (min-width: 1100px)and (max-width: 1200px)  {
   .side-image{
-    left: -1594px;
+    left: -1305px;
   }
 } 
 @media (min-width: 1200px)and (max-width: 1300px)  {
   .side-image{
-    left: -1299px ;
+    left: -1150px ;
   }
 } 
 @media (min-width: 1300px)and (max-width: 1400px)  {
@@ -948,262 +948,6 @@
   
 </style>
 {% javascript %}
-// previous code // previous code // previous code 
-// document.addEventListener('DOMContentLoaded', function () {
-//   const productTitle = document.querySelector('.product-title'); // Product title element
-//   const colorRadios = document.querySelectorAll('input[name^="Color-"]'); // Select all color radio buttons
-//   let flkty; // Define Flickity instance
-
-//   // Function to initialize Flickity
-//   function initializeFlickity() {
-//     const elem = document.querySelector('.js-media-sublist');
-    
-//     // Initialize Flickity
-//     flkty = new Flickity(elem, {
-//       cellAlign: 'left',
-//       contain: true,
-//       pageDots: false,
-//       wrapAround: true // For continuous looping
-//     });
-
-//     // Hook up buttons
-//     // const prevButton = document.getElementById('prev-button');
-//     // const nextButton = document.getElementById('next-button');
-
-//     // if (prevButton && nextButton) {
-//     //   prevButton.addEventListener('click', function () {
-//     //     flkty.previous();
-//     //   });
-
-//     //   nextButton.addEventListener('click', function () {
-//     //     flkty.next();
-//     //   });
-//     // }
-//   }
-
-//   // Function to update the product title with the selected color
-//   function updateProductTitle(selectedColor) {
-//     // Fetch product variant data via Ajax
-//     fetch(`${window.location.pathname}.js`)
-//       .then(response => response.json())
-//       .then(product => {
-//         // Find the variant that matches the selected color
-//         const selectedVariant = product.variants.find(variant => variant.option1 === selectedColor);
-
-//         if (selectedVariant) {
-//           // Update the product title with the selected color in uppercase
-//           productTitle.innerHTML = `${product.title} IN ${selectedColor.toUpperCase()}`;
-          
-//           // Reinitialize Flickity after updating the title
-//           flkty.destroy(); // Destroy the previous Flickity instance
-//           initializeFlickity(); // Re-initialize Flickity to ensure buttons are present
-//         }
-//       })
-//       .catch(error => console.error('Error fetching product variant data:', error));
-//   }
-
-//   // Check if there's a default checked radio button and update the title accordingly
-//   const defaultCheckedRadio = document.querySelector('input[name^="Color-"]:checked');
-//   if (defaultCheckedRadio) {
-//     const defaultColor = defaultCheckedRadio.value; // Get the default color value
-//     updateProductTitle(defaultColor); // Update title with the default color
-//   }
-
-//   // Add change event listeners for color radio buttons
-//   colorRadios.forEach(radio => {
-//     radio.addEventListener('change', function (event) {
-//       const selectedColor = event.target.value; // Get the value of the selected color
-//       updateProductTitle(selectedColor); // Update title with the selected color
-//     });
-//   });
-
-//   // Initialize Flickity initially
-//   initializeFlickity();
-// });
-
-
-// // document.addEventListener('DOMContentLoaded', function() {
-// //   var images = document.querySelectorAll('.main-image');
-// //   var totalImages = images.length;
-// //   var loadedImages = 0;
-
-// //   images.forEach(function(image) {
-// //     image.onload = function() {
-// //       loadedImages++;
-// //       if (loadedImages === totalImages) {
-// //         // Initialize Flickity or slider
-// //         var elem = document.querySelector('.product__media-sublist');
-// //         var flkty = new Flickity(elem, {
-// //           asNavFor: '.product__media-list',
-// //           contain: true,
-// //           pageDots: false,
-// //           prevNextButtons: false
-// //         });
-// //       }
-// //     };
-// //   });
-// // });
-
-
-//   const product_collaps = document.querySelectorAll('#product_collaps_wrapper .product__additional');
-//             const collaps_des= document.getElementsByClassName('product__additional-description');
-//   const collaps_items = Array.from(product_collaps);
-//   collaps_items.forEach(item=>{item.addEventListener('click', (e) => {
-//   console.log(item);
-//     if(item.classList.contains('active')){
-//       const collaps_content = item.childNodes[3];
-//       console.log(collaps_items)
-//       const arrowIcon = item.childNodes[1].childNodes[1];
-      
-//       if(collaps_content.classList.contains('hidden')){
-//         collaps_content.classList.remove('hidden');
-//         collaps_content.style.transition='0.25s all'
-        
-//         arrowIcon.style.transform='rotate(90deg)';
-//         const marginbtm = document.querySelector('.margin-btm');
-// marginbtm.style.marginBottom = '1100px';
-
-//       }else{
-//         collaps_content.classList.add('hidden');
-//         arrowIcon.style.transform='rotate(0deg)';
-//         const marginbtm = document.querySelector('.margin-btm');
-// marginbtm.style.marginBottom = '';
-
-//       }
-      
-//     }
-//     });})
-
-// //   document.getElementsByClassName('toggleButton').addEventListener('click', function() {
-// //     var content = document.getElementByClassName('content');
-// //     if (content.classList.contains('hidden')) {
-// //         content.classList.remove('hidden');
-// //         // this.textContent = 'Hide Content';
-// //     } else {
-// //         content.classList.add('hidden');
-// //         // this.textContent = 'Show Content';
-// //     }
-// // });
-
-// class ProductModal extends ModalDialog {
-// 	constructor() {
-// 		super();
-// 	}
-
-// 	hide() {
-// 		super.hide();
-// 		window.pauseAllMedia();
-// 	}
-
-// 	show(opener) {
-// 		super.show(opener);
-// 		this.showActiveMedia();
-// 	}
-
-// 	showActiveMedia() {
-// 		this.querySelectorAll(`[data-media-id]:not([data-media-id="${this.openedBy.getAttribute("data-media-id")}"])`).forEach((element) => {
-// 				// element.classList.remove('active');
-// 			}
-// 		)
-// 		const activeMedia = this.querySelector(`[data-media-id="${this.openedBy.getAttribute("data-media-id")}"]`);
-// 		// activeMedia.classList.add('active');
-// 		activeMedia.scrollIntoView();
-
-// 		if (activeMedia.nodeName == 'DEFERRED-MEDIA' && activeMedia.querySelector('template')?.content?.querySelector('.js-youtube'))
-// 			activeMedia.loadContent();
-// 	}
-// }
-
-// class ProductRecommendations extends HTMLElement {
-// 	constructor() {
-// 		super();
-
-// 		const handleIntersection = (entries, observer) => {
-      
-// 			if (!entries[0].isIntersecting) return;
-// 			observer.unobserve(this);
-
-// 			fetch(this.dataset.url)
-// 				.then(response => response.text())
-// 				.then(text => {
-// 					const html = document.createElement('div');
-// 					html.innerHTML = text;
-// 					const recommendations = html.querySelector('product-recommendations--single');
-// 					if (recommendations && recommendations.innerHTML.trim().length) {
-// 						this.innerHTML = recommendations.innerHTML;
-// 					}
-// 				})
-// 				.catch(e => {
-// 					console.error(e);
-// 				});
-// 		}
-
-// 		new IntersectionObserver(handleIntersection.bind(this), {rootMargin: '0px 0px 200px 0px'}).observe(this);
-// 	}
-// }
-
-// customElements.define('product-modal', ProductModal);
-// customElements.define('product-recommendations--single', ProductRecommendations);
-
-// $(document).ready(function () {
-// 	if ($('.product-section') && $('.product-section').length > 0) {
-		
-
-// 		// 1st carousel, main
-// 		$('.product__media-list').flickity({
-// 			pageDots: false,
-// 			prevNextButtons: false,
-// 			adaptiveHeight: true,
-// 			wrapAround: true,
-// 			on: {
-// 				select: function( index ) {
-
-// 					let slides = $( ".product__media-list .product__media-item");
-
-// 					var iframe = $(slides[index]).find('iframe');
-
-// 					var allIframes = $('.product__media-list').find('iframe');
-// 					var video = $(slides[index]).find('video');
-// 					var allVideos = $('.product__media-list').find('video');
-
-// 					if (video && video.length > 0) {
-// 						video.get(0).play();
-// 					} else if (allVideos && allVideos.length > 0) {
-// 						allVideos.get(0).pause();
-// 					}
-
-// 					if (iframe && iframe.length > 0) {
-// 						iframe[0].contentWindow.postMessage(JSON.stringify({"event": "command", "func": "playVideo"}), '*');
-// 					} else if (allIframes && allIframes.length > 0) {
-// 						allIframes[0].contentWindow.postMessage(JSON.stringify({"event": "command", "func": "pauseVideo"}), '*');
-// 					} else {
-// 						return false;
-// 					}
-// 				}
-// 			}
-// 		});
-
-// 		$('.product__media-list-wrapper-outer-arrow_prev').on( 'click', function() {
-// 			$('.product__media-list').flickity('previous');
-// 		});
-// 		$('.product__media-list-wrapper-outer-arrow_next').on( 'click', function() {
-// 			$('.product__media-list').flickity('next');
-// 		});
-
-
-// 		$('.product__media-sublist').flickity({
-// 			asNavFor: '.product__media-list',
-// 			contain: true,
-// 			pageDots: false,
-// 			prevNextButtons: false
-			
-// 		});
-// 	}
-// })
-// previous code  // previous code // previous code // previous code 
-
-// for client
-
 
 document.addEventListener('DOMContentLoaded', function () {
   const productTitle = document.querySelector('.product-title'); // Product title element
@@ -1223,18 +967,18 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Hook up buttons
-    // const prevButton = document.getElementById('prev-button');
-    // const nextButton = document.getElementById('next-button');
+    const prevButton = document.getElementById('prev-button');
+    const nextButton = document.getElementById('next-button');
 
-    // if (prevButton && nextButton) {
-    //   prevButton.addEventListener('click', function () {
-    //     flkty.previous();
-    //   });
+    if (prevButton && nextButton) {
+      prevButton.addEventListener('click', function () {
+        flkty.previous();
+      });
 
-    //   nextButton.addEventListener('click', function () {
-    //     flkty.next();
-    //   });
-    // }
+      nextButton.addEventListener('click', function () {
+        flkty.next();
+      });
+    }
   }
 
   // Function to update the product title with the selected color
@@ -1358,11 +1102,11 @@ class ProductModal extends ModalDialog {
 
 	showActiveMedia() {
 		this.querySelectorAll(`[data-media-id]:not([data-media-id="${this.openedBy.getAttribute("data-media-id")}"])`).forEach((element) => {
-				element.classList.remove('active');
+				// element.classList.remove('active');
 			}
 		)
 		const activeMedia = this.querySelector(`[data-media-id="${this.openedBy.getAttribute("data-media-id")}"]`);
-		activeMedia.classList.add('active');
+		// activeMedia.classList.add('active');
 		activeMedia.scrollIntoView();
 
 		if (activeMedia.nodeName == 'DEFERRED-MEDIA' && activeMedia.querySelector('template')?.content?.querySelector('.js-youtube'))
@@ -1402,53 +1146,60 @@ customElements.define('product-modal', ProductModal);
 customElements.define('product-recommendations--single', ProductRecommendations);
 
 $(document).ready(function () {
-    if ($('.product-section').length > 0) {
+	if ($('.product-section') && $('.product-section').length > 0) {
+		
 
-        // Main carousel initialization
-        var $mainCarousel = $('.product__media-list').flickity({
-            pageDots: false,
-            prevNextButtons: false,
-            adaptiveHeight: true,
-            wrapAround: true
-        });
+		// 1st carousel, main
+		$('.product__media-list').flickity({
+			pageDots: false,
+			prevNextButtons: false,
+			adaptiveHeight: true,
+			wrapAround: true,
+			on: {
+				select: function( index ) {
 
-        // Sublist carousel initialization
-        var $sublistCarousel = $('.product__media-sublist').flickity({
-            contain: true,
-            pageDots: false,
-            prevNextButtons: false,
-            draggable: true,
-            cellAlign: 'left'
-        });
+					let slides = $( ".product__media-list .product__media-item");
 
-        // Manually handle sublist click event to update main carousel
-        $sublistCarousel.on('staticClick.flickity', function(event, pointer, cellElement, cellIndex) {
-            if (!cellElement) {
-                return; // Exit if no cellElement
-            }
+					var iframe = $(slides[index]).find('iframe');
 
-            console.log('Sublist item clicked: ', cellIndex);
-            // Update main carousel to the clicked sublist item
-            $mainCarousel.flickity('select', cellIndex);
-        });
+					var allIframes = $('.product__media-list').find('iframe');
+					var video = $(slides[index]).find('video');
+					var allVideos = $('.product__media-list').find('video');
 
-        // Navigation arrow controls for the main carousel
-        $('.product__media-list-wrapper-outer-arrow_prev').on('click', function() {
-            $mainCarousel.flickity('previous');
-        });
-        $('.product__media-list-wrapper-outer-arrow_next').on('click', function() {
-            $mainCarousel.flickity('next');
-        });
-    }
-});
+					if (video && video.length > 0) {
+						video.get(0).play();
+					} else if (allVideos && allVideos.length > 0) {
+						allVideos.get(0).pause();
+					}
 
-$('.product__media-sublist').on('staticClick.flickity', function(event, pointer, cellElement, cellIndex) {
-    if (cellElement) {
-        console.log('Sublist item clicked: ', cellIndex);
-    }
-});
+					if (iframe && iframe.length > 0) {
+						iframe[0].contentWindow.postMessage(JSON.stringify({"event": "command", "func": "playVideo"}), '*');
+					} else if (allIframes && allIframes.length > 0) {
+						allIframes[0].contentWindow.postMessage(JSON.stringify({"event": "command", "func": "pauseVideo"}), '*');
+					} else {
+						return false;
+					}
+				}
+			}
+		});
+
+		$('.product__media-list-wrapper-outer-arrow_prev').on( 'click', function() {
+			$('.product__media-list').flickity('previous');
+		});
+		$('.product__media-list-wrapper-outer-arrow_next').on( 'click', function() {
+			$('.product__media-list').flickity('next');
+		});
 
 
+		$('.product__media-sublist').flickity({
+			asNavFor: '.product__media-list',
+			contain: true,
+			pageDots: false,
+			prevNextButtons: false
+			
+		});
+	}
+})
 {% endjavascript %}
 
 {%- if first_3d_model -%}
