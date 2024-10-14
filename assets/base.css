@@ -127,7 +127,7 @@
 }
 @media (min-width: 750px) {
   .container-md, .container-sm, .container {
-    max-width: 640px;
+    max-width: 957px;
   }
 }
 @media (min-width: 990px) {
