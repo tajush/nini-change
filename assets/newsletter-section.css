@@ -42,7 +42,7 @@
 
 @media screen and (min-width: 990px) {
   .newsletter__item {
-    gap: 7rem;
+    gap: 5rem;
   }
   .newsletter__button {
     width: auto;

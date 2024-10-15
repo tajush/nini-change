@@ -844,6 +844,17 @@
         "custom_liquid": "<div class=\"klaviyo-form-UEsuzC\"><\/div>"
       }
     },
+    "newsletter": {
+      "type": "newsletter",
+      "settings": {
+        "heading": "<p>Subscribe to the newsletter<\/p>",
+        "heading_animation": false,
+        "sub_title": "",
+        "newsletter_text": "",
+        "button_style": "primary",
+        "border_top": false
+      }
+    },
     "1709052581b56fbf42": {
       "type": "apps",
       "blocks": {
@@ -855,7 +866,7 @@
             "title_size": 32,
             "alignment": "center",
             "margin_top": 0,
-            "margin_bottom": 0,
+            "margin_bottom": 40,
             "background_color": "",
             "html_area": ""
           }
@@ -866,17 +877,6 @@
       ],
       "settings": {
         "include_margins": false
-      }
-    },
-    "newsletter": {
-      "type": "newsletter",
-      "settings": {
-        "heading": "",
-        "heading_animation": false,
-        "sub_title": "",
-        "newsletter_text": "",
-        "button_style": "primary",
-        "border_top": false
       }
     },
     "rich_text_L4AHFR": {
@@ -940,8 +940,8 @@
     "multicolumn_tyNW4N",
     "rich_text_8qHYNL",
     "custom_liquid_47eBfq",
-    "1709052581b56fbf42",
     "newsletter",
+    "1709052581b56fbf42",
     "rich_text_L4AHFR"
   ]
 }
