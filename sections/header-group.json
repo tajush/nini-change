@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "type": "header",
   "name": "t:sections.header.settings.header-group.label",
@@ -19,8 +28,8 @@
           "settings": {
             "side_select": "cards",
             "subheading": "Subheading",
-            "heading": "<p>Heading for subscribe form<\/p>",
-            "newsletter_text": "<p>Additional text for subscribe form.<\/p>",
+            "heading": "<p>Heading for subscribe form</p>",
+            "newsletter_text": "<p>Additional text for subscribe form.</p>",
             "button_style": "secondary",
             "show_social": true
           }
@@ -43,8 +52,8 @@
       ],
       "settings": {
         "color_scheme": "background-1",
-        "logo": "shopify:\/\/shop_images\/Nini-Designs-Logo-navy_0b6370e4-d8ab-49a4-a3d8-5e2807b92162.png",
-        "logo_2": "shopify:\/\/shop_images\/nini-white.svg",
+        "logo": "shopify://shop_images/Nini-Designs-Logo-navy_0b6370e4-d8ab-49a4-a3d8-5e2807b92162.png",
+        "logo_2": "shopify://shop_images/nini-white.svg",
         "logo_width": 50,
         "logo_position": "center",
         "menu": "main-menu",

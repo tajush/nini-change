@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -42,12 +51,12 @@
           "type": "modals",
           "settings": {
             "modal_label_1": "Size chart",
-            "modal_heading_1": "<p>Size chart<\/p>",
+            "modal_heading_1": "<p>Size chart</p>",
             "modal_text_1": "",
             "page_1": "size-chart",
             "modal_label_2": "Return policy",
-            "modal_heading_2": "<p>Return policy<\/p>",
-            "modal_text_2": "<p>15 Day return policy for full refund. Sale items are final sale.<\/p>",
+            "modal_heading_2": "<p>Return policy</p>",
+            "modal_text_2": "<p>15 Day return policy for full refund. Sale items are final sale.</p>",
             "page_2": ""
           }
         },
@@ -61,7 +70,7 @@
           "disabled": true,
           "settings": {
             "heading": "Some title",
-            "content": "<p>Some descriptionhjikuyhi<\/p>",
+            "content": "<p>Some descriptionhjikuyhi</p>",
             "tab_opened": false
           }
         },
@@ -69,7 +78,7 @@
           "type": "additional",
           "settings": {
             "heading": "Description",
-            "content": "<p>The Fitted Sets with attached shorts is exactly the right piece for tennis, pickleball or golf.  The UPF fabric is lightweight, and with shorts underneath it allows for freedom of movement in whatever sport you’re playing.  This comfortable skort also pairs perfectly with our racerback tank <\/p>",
+            "content": "<p>The Fitted Sets with attached shorts is exactly the right piece for tennis, pickleball or golf.  The UPF fabric is lightweight, and with shorts underneath it allows for freedom of movement in whatever sport you’re playing.  This comfortable skort also pairs perfectly with our racerback tank </p>",
             "tab_opened": false
           }
         },
@@ -77,7 +86,7 @@
           "type": "additional",
           "settings": {
             "heading": "Size and Fit",
-            "content": "<ul><li>Fits true to size<\/li><li>Model is wearing a (TBD)<\/li><\/ul><p>Model 1 is 5’7” (34 C bust, 27” waist, 38” hip), wearing size smallModel 2 is 5’10 ½” (32 A bust, 23 ½” waist, 35” hip), wearing size small.<\/p><ul><li>Product care is detailed on garment tag<\/li><\/ul><p><\/p>",
+            "content": "<ul><li>Fits true to size</li><li>Model is wearing a (TBD)</li></ul><p>Model 1 is 5’7” (34 C bust, 27” waist, 38” hip), wearing size smallModel 2 is 5’10 ½” (32 A bust, 23 ½” waist, 35” hip), wearing size small.</p><ul><li>Product care is detailed on garment tag</li></ul><p></p>",
             "tab_opened": false
           }
         },
@@ -85,7 +94,7 @@
           "type": "additional",
           "settings": {
             "heading": "Delivery & Returns",
-            "content": "<p>Domestic Orders:<\/p><p>Standard orders are typically processed within 1-3 business days at Nini Designs and shipped using your preferred method. Pre-orders usually ship in 4-6 weeks. Ground shipments are sent via UPS, taking approximately 3-5 business days in transit after processing. Expedited orders are usually processed within one business day if placed by 12 PM PST. Please note that orders are in transit on business days only. Processing times may be extended during sales or promotions based on our capacity to manage the current order volume. While we strive to maintain stock levels, high demand may lead to items being purchased on backorder, causing potential delays.<\/p><p>International Orders:<\/p><p>Nini Designs ships internationally to all countries except Russia. International orders are typically processed within 1-3 business days and shipped using your preferred method. We currently offer DHL Express shipping on international orders (with a $45 shipping cost, excluding customs fees\/duties), usually taking up to 4 business days in transit time after processing. Note that DHL Express does not deliver to P.O. Boxes. International orders are subject to duties and taxes determined by the destination country, calculated at checkout along with the $45 shipping cost. <\/p><p>Nini Designs is not responsible for any customs fees or duties incurred on international shipments, as these are the recipient's responsibility to pay. Be aware that transit times may vary due to customs delays.<\/p><p>Tax:<\/p><p>We do not collect sales tax on orders outside the state of California. California orders are subject to a 7.5% sales tax.<\/p><p>Returns:<\/p><p>For returns at Nini Designs, please review our return policy below. <br\/>Initiate your return process according to Nini Designs' Returns and Exchange guidelines. If you have any questions about your return, please contact us at customerservice@ninidesigns.com. Your refund will be processed upon acceptance of the returned items, following Nini Designs' specified return procedures.<\/p>",
+            "content": "<p>Domestic Orders:</p><p>Standard orders are typically processed within 1-3 business days at Nini Designs and shipped using your preferred method. Pre-orders usually ship in 4-6 weeks. Ground shipments are sent via UPS, taking approximately 3-5 business days in transit after processing. Expedited orders are usually processed within one business day if placed by 12 PM PST. Please note that orders are in transit on business days only. Processing times may be extended during sales or promotions based on our capacity to manage the current order volume. While we strive to maintain stock levels, high demand may lead to items being purchased on backorder, causing potential delays.</p><p>International Orders:</p><p>Nini Designs ships internationally to all countries except Russia. International orders are typically processed within 1-3 business days and shipped using your preferred method. We currently offer DHL Express shipping on international orders (with a $45 shipping cost, excluding customs fees/duties), usually taking up to 4 business days in transit time after processing. Note that DHL Express does not deliver to P.O. Boxes. International orders are subject to duties and taxes determined by the destination country, calculated at checkout along with the $45 shipping cost. </p><p>Nini Designs is not responsible for any customs fees or duties incurred on international shipments, as these are the recipient's responsibility to pay. Be aware that transit times may vary due to customs delays.</p><p>Tax:</p><p>We do not collect sales tax on orders outside the state of California. California orders are subject to a 7.5% sales tax.</p><p>Returns:</p><p>For returns at Nini Designs, please review our return policy below. <br/>Initiate your return process according to Nini Designs' Returns and Exchange guidelines. If you have any questions about your return, please contact us at customerservice@ninidesigns.com. Your refund will be processed upon acceptance of the returned items, following Nini Designs' specified return procedures.</p>",
             "tab_opened": false
           }
         },
@@ -131,9 +140,9 @@
       "type": "product-recommendations",
       "disabled": true,
       "settings": {
-        "heading": "<p>You May Also Like<\/p>",
+        "heading": "<p>You May Also Like</p>",
         "link": "Explore",
-        "button_link": "shopify:\/\/collections\/all",
+        "button_link": "shopify://collections/all",
         "products_limit": 6,
         "border_top": true,
         "image_ratio": "landscape",
@@ -149,10 +158,10 @@
       "type": "newsletter",
       "disabled": true,
       "settings": {
-        "heading": "<p>Heading for subscribe form<\/p>",
+        "heading": "<p>Heading for subscribe form</p>",
         "heading_animation": true,
         "sub_title": "Subheading",
-        "newsletter_text": "<p>Additional text for subscribe form.<\/p>",
+        "newsletter_text": "<p>Additional text for subscribe form.</p>",
         "button_style": "secondary",
         "border_top": false
       }
@@ -167,9 +176,9 @@
     "popular_products_PCzMWg": {
       "type": "popular-products",
       "settings": {
-        "heading": "<p>You May Also Like<\/p>",
+        "heading": "<p>You May Also Like</p>",
         "link": "Explore",
-        "button_link": "shopify:\/\/collections\/all",
+        "button_link": "shopify://collections/all",
         "collection": "court-to-cocktails",
         "products_limit": 3,
         "border_top": false,
@@ -186,7 +195,7 @@
       "type": "apps",
       "blocks": {
         "easyreviews_product_review_ztTeP4": {
-          "type": "shopify:\/\/apps\/easyreviews\/blocks\/product_review\/1341251b-09d7-46f3-ba6a-e732a50e97a5",
+          "type": "shopify://apps/easyreviews/blocks/product_review/1341251b-09d7-46f3-ba6a-e732a50e97a5",
           "disabled": true,
           "settings": {
           }
@@ -204,7 +213,7 @@
       "type": "apps",
       "blocks": {
         "hulk_product_reviews_review_list_yQqdje": {
-          "type": "shopify:\/\/apps\/hulk-product-reviews\/blocks\/review-list\/34006358-52bd-4ec7-8c78-200fe58b77ba",
+          "type": "shopify://apps/hulk-product-reviews/blocks/review-list/34006358-52bd-4ec7-8c78-200fe58b77ba",
           "settings": {
           }
         }

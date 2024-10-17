@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -46,7 +55,7 @@
       "type": "featured-blog",
       "disabled": true,
       "settings": {
-        "heading": "<p>Latest Articles<\/p>",
+        "heading": "<p>Latest Articles</p>",
         "blog": "",
         "post_limit": 3,
         "show_image": true,

@@ -1,20 +1,29 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
       "type": "main-login",
       "settings": {
         "subtitle": "Marketing non-disclosure agreement scrum project alpha lean startup startup business plan user experience angel investor focus research.",
-        "image": "shopify:\/\/shop_images\/pexels-anna-shvets-5069180_1.jpg"
+        "image": "shopify://shop_images/pexels-anna-shvets-5069180_1.jpg"
       }
     },
     "newsletter": {
       "type": "newsletter",
       "disabled": true,
       "settings": {
-        "heading": "<p>Heading for subscribe form<\/p>",
+        "heading": "<p>Heading for subscribe form</p>",
         "heading_animation": true,
         "sub_title": "Subheading",
-        "newsletter_text": "<p>Additional text for subscribe form.<\/p>",
+        "newsletter_text": "<p>Additional text for subscribe form.</p>",
         "button_style": "secondary",
         "border_top": false
       }

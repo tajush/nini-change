@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "type": "custom.overlay",
   "name": "t:sections.overlay-group.name",
@@ -23,7 +32,7 @@
             "placeholder_input": "E-mail",
             "button_label": "Continue for 10% off",
             "button_style": "primary",
-            "description": "<p>*Offer valid for your first purchase on nini-designs.com. Excludes sales.<\/p>"
+            "description": "<p>*Offer valid for your first purchase on nini-designs.com. Excludes sales.</p>"
           }
         },
         "social_links_NgnhdN": {
@@ -51,7 +60,7 @@
         "social_links_NgnhdN"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/pexels-denis-miller-16431234.jpg",
+        "image": "shopify://shop_images/pexels-denis-miller-16431234.jpg",
         "image_layout": "top",
         "image_fit": "cover",
         "limit-display": 0,

@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -38,9 +47,9 @@
       "disabled": true,
       "settings": {
         "position": "left",
-        "heading": "<p>Some heading for this section<\/p>",
+        "heading": "<p>Some heading for this section</p>",
         "height": "adapt",
-        "text": "<p>Description of your company, company history, company founders, and so on. There may be several paragraphs here.<\/p>",
+        "text": "<p>Description of your company, company history, company founders, and so on. There may be several paragraphs here.</p>",
         "column_text": "Description of your company, company history, company founders in two columns. You can also add any text. Add text about whatever you want.",
         "author_position": "Position of authors or any other text",
         "layout": "image_last",
@@ -51,7 +60,7 @@
       "type": "contact-form",
       "disabled": true,
       "settings": {
-        "heading": "<p>Contact form<\/p>",
+        "heading": "<p>Contact form</p>",
         "text": "Some text for your contact form. You can use multiple lines of text.",
         "image_width_1": 90,
         "image_width_2": 90

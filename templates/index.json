@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "video_banner_HktMGD": {
@@ -7,15 +16,15 @@
         "header_overlay": false,
         "color_scheme": "background-4",
         "subheading": "",
-        "heading": "<h2><strong>Fall-Winter 2024: NINI Luxe Activewear<\/strong><\/h2>",
+        "heading": "<h2><strong>Fall-Winter 2024: NINI Luxe Activewear</strong></h2>",
         "heading_size": "large",
         "text_information": "Blending high-performance UPF protection with chic design, NINI introduces a collection that merges the allure of luxurious fabrics with the practicality of sun protection. Crafted by Kristine and Addison, each piece embodies the brand’s commitment to stylish, functional wear that transitions seamlessly from the tennis court to cocktails, allowing women to embrace both their sensuality and their health.",
         "text_align": "left",
         "show_view_all": true,
         "button_label": "Shop Now",
         "button_style": "primary",
-        "button_link": "shopify:\/\/collections\/shop-all-sport",
-        "video": "shopify:\/\/files\/videos\/NINIUltraHD.mp4",
+        "button_link": "shopify://collections/shop-all-sport",
+        "video": "shopify://files/videos/NINIUltraHD.mp4",
         "video_ratio": "adapt",
         "video_fit": "cover",
         "opacity_overlay": 0
@@ -30,14 +39,14 @@
           "settings": {
             "color_scheme": "background-3",
             "subheading": "",
-            "heading": "<p>Court to Cocktails<\/p>",
+            "heading": "<p>Court to Cocktails</p>",
             "heading_size": "large",
             "description": "",
             "show_button": true,
             "button_style": "secondary",
             "button_label": "View collection",
-            "button_link": "shopify:\/\/collections\/court-to-cocktails",
-            "image": "shopify:\/\/shop_images\/pexels-rulo-davila-10113285.jpg",
+            "button_link": "shopify://collections/court-to-cocktails",
+            "image": "shopify://shop_images/pexels-rulo-davila-10113285.jpg",
             "overlay_opacity": 0.4,
             "slide_image_link": ""
           }
@@ -50,7 +59,7 @@
       "settings": {
         "color_scheme": "light",
         "full_width": true,
-        "height": "16\/9",
+        "height": "16/9",
         "enable_autoplay": true,
         "slide_duration": 1
       }
@@ -61,28 +70,28 @@
         "column_3CrPwe": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/089A984311.jpg",
+            "image": "shopify://shop_images/089A984311.jpg",
             "title": "SHOP DRESSES",
             "text": "",
-            "image_link": "shopify:\/\/collections\/dresses"
+            "image_link": "shopify://collections/dresses"
           }
         },
         "column_FnRmrE": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/089A965511.jpg",
+            "image": "shopify://shop_images/089A965511.jpg",
             "title": "SHOP SETS",
             "text": "",
-            "image_link": "shopify:\/\/collections\/sets"
+            "image_link": "shopify://collections/sets"
           }
         },
         "column_NDxUDz": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/NINI_JULY17_238511.jpg",
+            "image": "shopify://shop_images/NINI_JULY17_238511.jpg",
             "title": "SHOP OUTERWEAR",
             "text": "",
-            "image_link": "shopify:\/\/collections\/jackets"
+            "image_link": "shopify://collections/jackets"
           }
         }
       },
@@ -110,19 +119,19 @@
         "column_LJbF3a": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/NINI_JULY17_1889.jpg",
+            "image": "shopify://shop_images/NINI_JULY17_1889.jpg",
             "title": "",
             "text": "",
-            "image_link": "shopify:\/\/collections\/new-arrivals"
+            "image_link": "shopify://collections/new-arrivals"
           }
         },
         "column_WEQXXD": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/089A9961.jpg",
+            "image": "shopify://shop_images/089A9961.jpg",
             "title": "",
             "text": "",
-            "image_link": "shopify:\/\/collections\/sport"
+            "image_link": "shopify://collections/sport"
           }
         }
       },
@@ -144,7 +153,7 @@
       "type": "apps",
       "blocks": {
         "ang_photo_gallery_npg_gallery_LMKjUK": {
-          "type": "shopify:\/\/apps\/ang-photo-gallery\/blocks\/npg-gallery\/b61d21a4-682d-4f98-8422-14124808e1f7",
+          "type": "shopify://apps/ang-photo-gallery/blocks/npg-gallery/b61d21a4-682d-4f98-8422-14124808e1f7",
           "settings": {
             "gallery_code": "angcode_699",
             "block_padding": 25
@@ -167,14 +176,14 @@
           "settings": {
             "color_scheme": "background-3",
             "subheading": "Subheading",
-            "heading": "<p>Some heading<\/p>",
+            "heading": "<p>Some heading</p>",
             "heading_size": "large",
             "description": "Some description",
             "show_button": true,
             "button_style": "secondary",
             "button_label": "Button label",
             "button_link": "",
-            "image": "shopify:\/\/shop_images\/089A0311.jpg",
+            "image": "shopify://shop_images/089A0311.jpg",
             "overlay_opacity": 0.4,
             "slide_image_link": ""
           }
@@ -184,14 +193,14 @@
           "settings": {
             "color_scheme": "background-3",
             "subheading": "Subheading",
-            "heading": "<p>Some heading<\/p>",
+            "heading": "<p>Some heading</p>",
             "heading_size": "large",
             "description": "Some description",
             "show_button": true,
             "button_style": "secondary",
             "button_label": "Button label",
             "button_link": "",
-            "image": "shopify:\/\/shop_images\/089A0105t1.jpg",
+            "image": "shopify://shop_images/089A0105t1.jpg",
             "overlay_opacity": 0.4,
             "slide_image_link": ""
           }
@@ -201,14 +210,14 @@
           "settings": {
             "color_scheme": "background-3",
             "subheading": "Subheading",
-            "heading": "<p>Some heading<\/p>",
+            "heading": "<p>Some heading</p>",
             "heading_size": "large",
             "description": "Some description",
             "show_button": true,
             "button_style": "secondary",
             "button_label": "Button label",
             "button_link": "",
-            "image": "shopify:\/\/shop_images\/NINI_JULY17_2368.jpg",
+            "image": "shopify://shop_images/NINI_JULY17_2368.jpg",
             "overlay_opacity": 0.4,
             "slide_image_link": ""
           }
@@ -218,14 +227,14 @@
           "settings": {
             "color_scheme": "background-3",
             "subheading": "Subheading",
-            "heading": "<p>Some heading<\/p>",
+            "heading": "<p>Some heading</p>",
             "heading_size": "large",
             "description": "Some description",
             "show_button": true,
             "button_style": "secondary",
             "button_label": "Button label",
             "button_link": "",
-            "image": "shopify:\/\/shop_images\/089A9753.jpg",
+            "image": "shopify://shop_images/089A9753.jpg",
             "overlay_opacity": 0.4,
             "slide_image_link": ""
           }
@@ -252,28 +261,28 @@
         "column_qgFmDP": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/089A0311.jpg",
+            "image": "shopify://shop_images/089A0311.jpg",
             "image_width": 450
           }
         },
         "column_UwXUBP": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/089A012811.jpg",
+            "image": "shopify://shop_images/089A012811.jpg",
             "image_width": 350
           }
         },
         "column_azQPE8": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/089A9630.jpg",
+            "image": "shopify://shop_images/089A9630.jpg",
             "image_width": 350
           }
         },
         "column_G8QPFW": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/NINI_JULY17_222111.jpg",
+            "image": "shopify://shop_images/NINI_JULY17_222111.jpg",
             "image_width": 350
           }
         },
@@ -301,7 +310,7 @@
       "disabled": true,
       "settings": {
         "color_scheme": "background-1",
-        "heading": "<p>Some header for your <em>collection<\/em><\/p>",
+        "heading": "<p>Some header for your <em>collection</em></p>",
         "heading_animation": true,
         "text_information": "Some descriptive text for your collection. For better alignment, it is better to use text in several lines.",
         "show_view_all": true,
@@ -390,7 +399,7 @@
       "type": "popular-products",
       "disabled": true,
       "settings": {
-        "heading": "<p>You May be Interested<\/p>",
+        "heading": "<p>You May be Interested</p>",
         "link": "Explore",
         "button_link": "",
         "collection": "",
@@ -461,7 +470,7 @@
       ],
       "disabled": true,
       "settings": {
-        "heading": "<p>Heading for your ordered list section<\/p>",
+        "heading": "<p>Heading for your ordered list section</p>",
         "heading_animation": true,
         "description": "Description for your ordered list section",
         "font_size": 400,
@@ -473,14 +482,14 @@
       "disabled": true,
       "settings": {
         "color_scheme": "background-1",
-        "heading": "<p>Some header for your <em>collection<\/em><\/p>",
+        "heading": "<p>Some header for your <em>collection</em></p>",
         "heading_animation": true,
         "text_information": "Some descriptive text for your collection. For better alignment, it is better to use text in several lines.",
         "show_view_all": true,
         "button_label": "Shop now",
         "button_style": "secondary",
         "button_link": "",
-        "image": "shopify:\/\/shop_images\/Nini_0711.jpg",
+        "image": "shopify://shop_images/Nini_0711.jpg",
         "image_width": 800
       }
     },
@@ -490,21 +499,21 @@
         "image_collage_image_eqQTQT": {
           "type": "image-collage_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/089A0105t1.jpg",
+            "image": "shopify://shop_images/089A0105t1.jpg",
             "image_width": 120
           }
         },
         "image_collage_image_Jdt3nC": {
           "type": "image-collage_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Nini_0914.jpg",
+            "image": "shopify://shop_images/Nini_0914.jpg",
             "image_width": 120
           }
         },
         "image_collage_image_ngzx8w": {
           "type": "image-collage_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Nini_0700.jpg",
+            "image": "shopify://shop_images/Nini_0700.jpg",
             "image_width": 120
           }
         },
@@ -531,8 +540,8 @@
       "disabled": true,
       "settings": {
         "sub_title": "Subheading",
-        "title": "<p> <em> Heading for <\/em> Image collage<\/p>",
-        "image_account": "shopify:\/\/shop_images\/089A9753.jpg",
+        "title": "<p> <em> Heading for </em> Image collage</p>",
+        "image_account": "shopify://shop_images/089A9753.jpg",
         "name_account": "For instance account name",
         "desc_account": "For instance account followers",
         "button_label": "Explore",
@@ -545,23 +554,23 @@
       "disabled": true,
       "settings": {
         "color_scheme": "background-2",
-        "heading": "<p>Some header for your <em>collection<\/em><\/p>",
+        "heading": "<p>Some header for your <em>collection</em></p>",
         "heading_animation": true,
         "text_information": "Some descriptive text for your collection. For better alignment, it is better to use text in several lines.",
         "show_view_all": true,
         "button_label": "Shop now",
         "button_style": "secondary",
         "button_link": "",
-        "image_1": "shopify:\/\/shop_images\/089A9655.jpg",
-        "image_2": "shopify:\/\/shop_images\/089A012811.jpg",
-        "image_3": "shopify:\/\/shop_images\/089A0115.jpg"
+        "image_1": "shopify://shop_images/089A9655.jpg",
+        "image_2": "shopify://shop_images/089A012811.jpg",
+        "image_3": "shopify://shop_images/089A0115.jpg"
       }
     },
     "featured_products_pp87KK": {
       "type": "featured-products",
       "disabled": true,
       "settings": {
-        "heading": "<p>Some header<\/p>",
+        "heading": "<p>Some header</p>",
         "description": "Some descriptive text for your featured items section. For better alignment, it is better to use text in several lines",
         "subtitle": "Subheading",
         "product_list": [
@@ -624,14 +633,14 @@
           "settings": {
             "color_scheme": "background-3",
             "subheading": "Subheading",
-            "heading": "<p>Some heading<\/p>",
+            "heading": "<p>Some heading</p>",
             "heading_size": "large",
             "description": "Some description",
             "show_button": true,
             "button_style": "secondary",
             "button_label": "Button label",
             "button_link": "",
-            "image": "shopify:\/\/shop_images\/089A9753.jpg",
+            "image": "shopify://shop_images/089A9753.jpg",
             "overlay_opacity": 0.4,
             "slide_image_link": ""
           }
@@ -641,7 +650,7 @@
           "settings": {
             "color_scheme": "background-3",
             "subheading": "Subheading",
-            "heading": "<p>Some heading<\/p>",
+            "heading": "<p>Some heading</p>",
             "heading_size": "large",
             "description": "Some description",
             "show_button": true,
@@ -657,14 +666,14 @@
           "settings": {
             "color_scheme": "background-3",
             "subheading": "dsgfffgfdgdfgd",
-            "heading": "<p>Some heading<\/p>",
+            "heading": "<p>Some heading</p>",
             "heading_size": "large",
             "description": "Some description",
             "show_button": true,
             "button_style": "secondary",
             "button_label": "Button label",
             "button_link": "",
-            "image": "shopify:\/\/shop_images\/Untitled-1.jpg",
+            "image": "shopify://shop_images/Untitled-1.jpg",
             "overlay_opacity": 0.4,
             "slide_image_link": ""
           }
@@ -674,14 +683,14 @@
           "settings": {
             "color_scheme": "background-3",
             "subheading": "Subheading",
-            "heading": "<p>Some heading<\/p>",
+            "heading": "<p>Some heading</p>",
             "heading_size": "large",
             "description": "Some description",
             "show_button": true,
             "button_style": "secondary",
             "button_label": "Button label",
             "button_link": "",
-            "image": "shopify:\/\/shop_images\/Untitled-1.jpg",
+            "image": "shopify://shop_images/Untitled-1.jpg",
             "overlay_opacity": 0.4,
             "slide_image_link": ""
           }
@@ -691,14 +700,14 @@
           "settings": {
             "color_scheme": "background-3",
             "subheading": "Subheading",
-            "heading": "<p>Some heading<\/p>",
+            "heading": "<p>Some heading</p>",
             "heading_size": "large",
             "description": "Some description",
             "show_button": true,
             "button_style": "secondary",
             "button_label": "Button label",
             "button_link": "",
-            "image": "shopify:\/\/shop_images\/Untitled-1_9043fafb-d2a5-4afb-a074-fe264974613f.jpg",
+            "image": "shopify://shop_images/Untitled-1_9043fafb-d2a5-4afb-a074-fe264974613f.jpg",
             "overlay_opacity": 0.2,
             "slide_image_link": ""
           }
@@ -708,14 +717,14 @@
           "settings": {
             "color_scheme": "background-3",
             "subheading": "Subheading",
-            "heading": "<p>Some heading<\/p>",
+            "heading": "<p>Some heading</p>",
             "heading_size": "large",
             "description": "Some description",
             "show_button": true,
             "button_style": "secondary",
             "button_label": "Button label",
             "button_link": "",
-            "image": "shopify:\/\/shop_images\/089A9833.jpg",
+            "image": "shopify://shop_images/089A9833.jpg",
             "overlay_opacity": 0.4,
             "slide_image_link": ""
           }
@@ -733,7 +742,7 @@
       "settings": {
         "color_scheme": "light",
         "full_width": true,
-        "height": "21\/9",
+        "height": "21/9",
         "enable_autoplay": true,
         "slide_duration": 1
       }
@@ -742,9 +751,9 @@
       "type": "slideshow1",
       "disabled": true,
       "settings": {
-        "image_1": "shopify:\/\/shop_images\/hero-carousel1.png",
-        "image_2": "shopify:\/\/shop_images\/Untitled-1_9043fafb-d2a5-4afb-a074-fe264974613f.jpg",
-        "image_3": "shopify:\/\/shop_images\/hero-carousel1.png"
+        "image_1": "shopify://shop_images/hero-carousel1.png",
+        "image_2": "shopify://shop_images/Untitled-1_9043fafb-d2a5-4afb-a074-fe264974613f.jpg",
+        "image_3": "shopify://shop_images/hero-carousel1.png"
       }
     },
     "multicolumn_tyNW4N": {
@@ -753,9 +762,9 @@
         "column_f6xj4A": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/089A0105t1.jpg",
+            "image": "shopify://shop_images/089A0105t1.jpg",
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "image_link": ""
           }
         },
@@ -763,7 +772,7 @@
           "type": "column",
           "settings": {
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "image_link": ""
           }
         },
@@ -771,7 +780,7 @@
           "type": "column",
           "settings": {
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "image_link": ""
           }
         },
@@ -779,7 +788,7 @@
           "type": "column",
           "settings": {
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "image_link": ""
           }
         }
@@ -814,7 +823,7 @@
         "text_YyPgtN": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
           }
         },
         "button_g4E497": {
@@ -841,13 +850,13 @@
       "type": "custom-liquid",
       "disabled": true,
       "settings": {
-        "custom_liquid": "<div class=\"klaviyo-form-UEsuzC\"><\/div>"
+        "custom_liquid": "<div class=\"klaviyo-form-UEsuzC\"></div>"
       }
     },
     "newsletter": {
       "type": "newsletter",
       "settings": {
-        "heading": "<p>Subscribe to the newsletter<\/p>",
+        "heading": "<p>Subscribe to the newsletter</p>",
         "heading_animation": false,
         "sub_title": "",
         "newsletter_text": "",
@@ -859,7 +868,7 @@
       "type": "apps",
       "blocks": {
         "instafeed_app_block_cyamqg": {
-          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
             "title": "Follow us on Instagram",
             "title_color": "",
@@ -892,14 +901,14 @@
         "text_YDDHkw": {
           "type": "text",
           "settings": {
-            "text": "<p>off when you sign up for text and email! <\/p><p>Sign up for emails and be the first to know about new collections, special offers, and much more.<\/p>"
+            "text": "<p>off when you sign up for text and email! </p><p>Sign up for emails and be the first to know about new collections, special offers, and much more.</p>"
           }
         },
         "button_MU68jk": {
           "type": "button",
           "settings": {
             "button_label": "Shop Now",
-            "button_link": "shopify:\/\/collections",
+            "button_link": "shopify://collections",
             "button_style_secondary": false
           }
         }

@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -21,9 +30,9 @@
             "button_style": "secondary",
             "button_label": "",
             "button_link": "",
-            "image": "shopify:\/\/shop_images\/089A0859_AB11.jpg",
+            "image": "shopify://shop_images/089A0859_AB11.jpg",
             "overlay_opacity": 0.4,
-            "slide_image_link": "shopify:\/\/products\/fitted-skirt-with-shorts"
+            "slide_image_link": "shopify://products/fitted-skirt-with-shorts"
           }
         }
       },
@@ -34,7 +43,7 @@
       "settings": {
         "color_scheme": "light",
         "full_width": false,
-        "height": "16\/9",
+        "height": "16/9",
         "enable_autoplay": false,
         "slide_duration": 5
       }
@@ -42,8 +51,8 @@
     "single_image_qcDGTq": {
       "type": "SingleImage",
       "settings": {
-        "image": "shopify:\/\/shop_images\/089A0859_AB11.jpg",
-        "image_mobile": "shopify:\/\/shop_images\/089A0859_AB11.jpg",
+        "image": "shopify://shop_images/089A0859_AB11.jpg",
+        "image_mobile": "shopify://shop_images/089A0859_AB11.jpg",
         "full_width": false,
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
@@ -55,37 +64,37 @@
         "column_dHNKcc": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/089A913111.jpg",
+            "image": "shopify://shop_images/089A913111.jpg",
             "title": "",
             "text": "",
-            "image_link": "shopify:\/\/collections\/court-to-cocktails"
+            "image_link": "shopify://collections/court-to-cocktails"
           }
         },
         "column_YacfBb": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/089A9909_B11.jpg",
+            "image": "shopify://shop_images/089A9909_B11.jpg",
             "title": "",
             "text": "",
-            "image_link": "shopify:\/\/collections\/court-to-cocktails"
+            "image_link": "shopify://collections/court-to-cocktails"
           }
         },
         "column_j3JCJK": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/NINI_JULY17_4111.jpg",
+            "image": "shopify://shop_images/NINI_JULY17_4111.jpg",
             "title": "",
             "text": "",
-            "image_link": "shopify:\/\/collections\/court-to-cocktails"
+            "image_link": "shopify://collections/court-to-cocktails"
           }
         },
         "column_kWwzWq": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/089A9700_A_C11.jpg",
+            "image": "shopify://shop_images/089A9700_A_C11.jpg",
             "title": "",
             "text": "",
-            "image_link": "shopify:\/\/collections\/court-to-cocktails"
+            "image_link": "shopify://collections/court-to-cocktails"
           }
         }
       },
@@ -109,11 +118,11 @@
       "type": "product-image-banner",
       "disabled": true,
       "settings": {
-        "heading": "<p>Some title<\/p>",
+        "heading": "<p>Some title</p>",
         "description": "Some description",
         "button_link": "",
         "button_label": "Link label",
-        "cover_image": "shopify:\/\/shop_images\/089A0859_AB11.jpg"
+        "cover_image": "shopify://shop_images/089A0859_AB11.jpg"
       }
     },
     "image_with_text_4QtRUH": {
@@ -149,10 +158,10 @@
       "disabled": true,
       "settings": {
         "position": "center",
-        "heading": "<p>Some heading for this section<\/p>",
-        "image": "shopify:\/\/shop_images\/089A0859_AB11.jpg",
+        "heading": "<p>Some heading for this section</p>",
+        "image": "shopify://shop_images/089A0859_AB11.jpg",
         "height": "all-height",
-        "text": "<p>Description of your company, company history, company founders, and so on. There may be several paragraphs here.<\/p>",
+        "text": "<p>Description of your company, company history, company founders, and so on. There may be several paragraphs here.</p>",
         "column_text": "Description of your company, company history, company founders in two columns. You can also add any text. Add text about whatever you want.",
         "author_position": "Position of authors or any other text",
         "layout": "image_last",
@@ -165,9 +174,9 @@
         "column_zcEphF": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/089A0859_AB11.jpg",
+            "image": "shopify://shop_images/089A0859_AB11.jpg",
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "image_link": ""
           }
         }
