@@ -27,8 +27,15 @@
           "settings": {
           }
         },
+        "custom_liquid_cph6jC": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<p>Colors:</p>\n{% if product.metafields.custom.redirect_options %}\n  <form id=\"redirect-radio-form\">\n    {% assign options = product.metafields.custom.redirect_options.value | split: ',' %}\n    {% for option in options %}\n      {% assign parts = option | split: '::' %}\n      <input type=\"radio\" name=\"redirectOption\" value=\"{{ parts[1] }}\" id=\"option{{ forloop.index }}\">\n      <label for=\"option{{ forloop.index }}\">{{ parts[0] }}</label><br>\n    {% endfor %}\n  </form>\n{% endif %}"
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
+          "disabled": true,
           "settings": {
             "picker_type": "button"
           }
@@ -111,6 +118,7 @@
         "title",
         "tags",
         "price",
+        "custom_liquid_cph6jC",
         "variant_picker",
         "buy_buttons",
         "modals",

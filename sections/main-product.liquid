@@ -1204,6 +1204,16 @@
 
 // for client
 
+document.addEventListener('DOMContentLoaded', function() {
+  const form = document.getElementById('redirect-radio-form');
+  
+  form.addEventListener('change', function(event) {
+    if (event.target.name === 'redirectOption') {
+      const selectedUrl = event.target.value;  // URL saved in the metafield
+      window.location.href = selectedUrl;  // Redirect to the selected URL
+    }
+  });
+});
 
 document.addEventListener('DOMContentLoaded', function () {
   const productTitle = document.querySelector('.product-title'); // Product title element
@@ -1248,7 +1258,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (selectedVariant) {
           // Update the product title with the selected color in uppercase
-          productTitle.innerHTML = `${product.title} IN ${selectedColor.toUpperCase()}`;
+          // productTitle.innerHTML = `${product.title} IN ${selectedColor.toUpperCase()}`;
           
           // Reinitialize Flickity after updating the title
           flkty.destroy(); // Destroy the previous Flickity instance
