@@ -1100,31 +1100,87 @@ fieldset.product-form__input .form__label {
   /* overflow-x: hidden; */
   margin-top: 118px;
 }
+@media(max-width:12000px) {
+  .product__media-sublist {
+    margin-top: -2%;
+}}
+@media(max-width:1900px) {
+  .product__media-sublist {
+    margin-top: 0%;
+}}
+@media(max-width:1800px) {
+  .product__media-sublist {
+    margin-top: -1%;
+}}
+@media(max-width:1700px) {
+  .product__media-sublist {
+    margin-top: 0%;
+}}
+@media(max-width:1600px) {
+  .product__media-sublist {
+    margin-top: 0%;
+}}
+@media(max-width:1500px) {
+  .product__media-sublist {
+    margin-top: -1%;
+}}
+@media(max-width:1400px) {
+  .product__media-sublist {
+    margin-top: -8%;
+}}
+@media(max-width:1300px) {
+  .product__media-sublist {
+    margin-top: -17%;
+}}
+@media(max-width:1200px) {
+  .product__media-sublist {
+    margin-top: -13%;
+}}
+@media(max-width:1100px) {
+  .product__media-sublist {
+    margin-top: -13%;
+}}
 @media(max-width:1000px) {
   .product__media-sublist {
-    margin-top: -223px;
+    margin-top: -26%;
+}}
+@media (max-width: 950px) {
+  .product__media-sublist {
+    margin-top: -30%;
 }}
 @media (max-width: 900px) {
   .product__media-sublist {
-    margin-top: 249px;
+    margin-top: 31%;
 }}
 /* @media (min-width: 900px) {
   .product__media-sublist {
     margin-top: -233px;
 }} */
 
-@media (min-width: 1000px)  {
-  .product__media-sublist {
-    margin-top: -70px;
-}}
-@media (max-width:600px) {
+
+@media (max-width:800px) {
   .product__media-sublist{
-    margin-top: 61px;
+    margin-top: 27%;
   }
 }
-@media (min-width:400px) and (max-width:900) {
+/* @media  (max-width:775px) {
   .product__media-sublist{
-    margin-top: -129px;
+    margin-top: 117px;
+  }
+} */
+@media (max-width:700px) {
+  .product__media-sublist{
+    margin-top: 117px;
+  }
+}
+@media (max-width:600px) {
+  .product__media-sublist{
+    margin-top: 125px;
+  }
+}
+@media (max-width:500px) {
+  .product__media-sublist{
+    margin-top: 61px;
   }
 }
 .product__media-sublist.flickity-enabled {
