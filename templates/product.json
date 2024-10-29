@@ -100,6 +100,7 @@
         },
         "complementary_products": {
           "type": "complementary",
+          "disabled": true,
           "settings": {
             "product_list_limit": 1
           }
