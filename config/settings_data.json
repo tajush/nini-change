@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
     "colors_solid_button_background": "#56443E",
@@ -40,19 +49,19 @@
     "card_border": "#e5e5e5",
     "show_color_swatch": true,
     "social_twitter_link": "",
-    "social_facebook_link": "https:\/\/www.facebook.com\/@ninidesignsco",
-    "social_pinterest_link": "https:\/\/www.pinterest.com\/ninidesignsco\/",
-    "social_instagram_link": "https:\/\/www.instagram.com\/ninidesignsco\/",
-    "social_tiktok_link": "https:\/\/www.tiktok.com\/@ninidesignsco",
-    "favicon": "shopify:\/\/shop_images\/nini-black.svg",
-    "checkout_logo_image": "shopify:\/\/shop_images\/nini-black.svg",
+    "social_facebook_link": "https://www.facebook.com/@ninidesignsco",
+    "social_pinterest_link": "https://www.pinterest.com/ninidesignsco/",
+    "social_instagram_link": "https://www.instagram.com/ninidesignsco/",
+    "social_tiktok_link": "https://www.tiktok.com/@ninidesignsco",
+    "favicon": "shopify://shop_images/nini-black.svg",
+    "checkout_logo_image": "shopify://shop_images/nini-black.svg",
     "colors_background_announcement_bar": "#afbbbd",
     "sale_badge_color_scheme": "background-1",
     "sections": {
       "main-password-header": {
         "type": "main-password-header",
         "settings": {
-          "logo": "shopify:\/\/shop_images\/nini-black.svg",
+          "logo": "shopify://shop_images/nini-black.svg",
           "logo_max_width": 50,
           "color_scheme": "background-1"
         }
@@ -69,40 +78,71 @@
     ],
     "blocks": {
       "18218067344242134805": {
-        "type": "shopify:\/\/apps\/hulk-product-reviews\/blocks\/app\/34006358-52bd-4ec7-8c78-200fe58b77ba",
+        "type": "shopify://apps/hulk-product-reviews/blocks/app/34006358-52bd-4ec7-8c78-200fe58b77ba",
         "disabled": false,
         "settings": {
         }
       },
       "7397712880091056704": {
-        "type": "shopify:\/\/apps\/tapita-coming-soon\/blocks\/app-embed\/41bcf4f8-7f08-4608-9fa1-10d4516bdebf",
+        "type": "shopify://apps/tapita-coming-soon/blocks/app-embed/41bcf4f8-7f08-4608-9fa1-10d4516bdebf",
         "disabled": false,
         "settings": {
           "tpt_coming_soon": "{}"
         }
       },
       "13768625480086291342": {
-        "type": "shopify:\/\/apps\/forms\/blocks\/forms\/8744a304-fcb1-4347-b211-bb6b4759a76a",
+        "type": "shopify://apps/forms/blocks/forms/8744a304-fcb1-4347-b211-bb6b4759a76a",
         "disabled": false,
         "settings": {
         }
       },
       "855628211100114053": {
-        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
+        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
         "settings": {
         }
       },
       "1232542678405107163": {
-        "type": "shopify:\/\/apps\/instafeed\/blocks\/head-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+        "type": "shopify://apps/instafeed/blocks/head-block/c447db20-095d-4a10-9725-b5977662c9d5",
         "disabled": false,
         "settings": {
         }
       },
       "3577669850698438243": {
-        "type": "shopify:\/\/apps\/preorder-now-wod-preorders\/blocks\/app-embed\/fdf17d17-ef12-4a7b-8383-20cc1fc2a4b6",
+        "type": "shopify://apps/preorder-now-wod-preorders/blocks/app-embed/fdf17d17-ef12-4a7b-8383-20cc1fc2a4b6",
         "disabled": false,
         "settings": {
+        }
+      },
+      "6263565299450869220": {
+        "type": "shopify://apps/loop-returns-exchanges/blocks/return-coverage/e32ccd84-40d6-4b16-98bf-b6b9da010afd",
+        "disabled": false,
+        "settings": {
+          "element-to-watch-for-cart-updates": "",
+          "event-system": "dom-event-system",
+          "auto-refresh": false,
+          "auto-refresh-option": "every-page"
+        }
+      },
+      "5888675206956468567": {
+        "type": "shopify://apps/loop-returns-exchanges/blocks/onstore/e32ccd84-40d6-4b16-98bf-b6b9da010afd",
+        "disabled": false,
+        "settings": {
+          "show-onstore-bar": true,
+          "api-key": "test-key",
+          "checkout-selector": "#checkout",
+          "replace-checkout-button": false,
+          "script-discounts": false,
+          "preserve-cart": false,
+          "available-credit-bar-label": "in available credit",
+          "bar-value-font-size": "15",
+          "bar-label-font-size": "10",
+          "bar-button-font-size": "10",
+          "bottom-bar-alignment": "full",
+          "bar-color": "#000000",
+          "bar-text-color": "#ffffff",
+          "bump-side-cart": false,
+          "side-cart-selector": ".sidecart"
         }
       }
     }
