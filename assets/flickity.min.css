@@ -80,6 +80,16 @@ https://flickity.metafizzy.co
 }
 @media (max-width:1300px) {
   .flickity-prev-next-button{
+    top: 10.5%;
+  width: 14px;
+  height: 22px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  
+}
+}
+@media (max-width:1200px) {
+  .flickity-prev-next-button{
     top: 9.5%;
   width: 14px;
   height: 22px;
@@ -100,7 +110,27 @@ https://flickity.metafizzy.co
 }
 @media (max-width:1000px) {
   .flickity-prev-next-button{
+    top: 9.5%;
+  width: 14px;
+  height: 22px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  
+}
+}
+@media (max-width:989px) {
+  .flickity-prev-next-button{
     top: 8.5%;
+  width: 14px;
+  height: 22px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  
+}
+}
+@media (max-width:925px) {
+  .flickity-prev-next-button{
+    top: 7.5%;
   width: 14px;
   height: 22px;
   border-radius: 50%;

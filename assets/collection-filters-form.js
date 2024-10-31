@@ -336,6 +336,21 @@ class FacetRemove extends HTMLElement {
 }
 
 customElements.define('facet-remove', FacetRemove);
+document.addEventListener("DOMContentLoaded", function () {
+    // Select all checkboxes inside product-type__list
+    const checkboxes = document.querySelectorAll('.product-type__list input[type=checkbox]');
+
+    checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', function () {
+            if (this.checked) {
+                // Uncheck all other checkboxes
+                checkboxes.forEach(cb => {
+                    if (cb !== this) cb.checked = false;
+                });
+            }
+        });
+    });
+});
 
 function checkProductTypeItem() {	
 	const productTypeListWrapper = document.querySelector(('.product-type__wrapper'));

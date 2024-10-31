@@ -4797,6 +4797,11 @@ img#niniO_coming-lock-icon {
       height: 160.5px !important;
 
 }
+@media (max-width: 500px) {
+ .product__media-sublist.js-media-sublist.no-js-hidden.flickity-enabled.is-draggable >div{
+      height: 231.5px !important;
+
+}}
 /* .side-img-width {
       width: 140px !important;
 

@@ -1130,7 +1130,23 @@ fieldset.product-form__input .form__label {
 }}
 @media(max-width:1300px) {
   .product__media-sublist {
+    margin-top: -9%;
+}}
+@media(max-width:1275px) {
+  .product__media-sublist {
+    margin-top: -9%;
+}}
+@media(max-width:1250px) {
+  .product__media-sublist {
     margin-top: -17%;
+}}
+@media (min-width:1225px) and (max-width:1250px) {
+  .product__media-sublist {
+    margin-top: -11%;
+}}
+@media(max-width:1225px) {
+  .product__media-sublist {
+    margin-top: -14%;
 }}
 @media(max-width:1200px) {
   .product__media-sublist {
@@ -1142,11 +1158,47 @@ fieldset.product-form__input .form__label {
 }}
 @media(max-width:1000px) {
   .product__media-sublist {
-    margin-top: -26%;
+    margin-top: -14%;
+}}
+@media (max-width: 995px) {
+  .product__media-sublist {
+    margin-top: -13%;
+}}
+@media  (min-width: 988px) and(max-width: 994px) {
+  .product__media-sublist {
+    margin-top: -12%;
+}}
+@media (max-width: 990px) {
+  .product__media-sublist {
+    margin-top: -23%;
+}}
+@media (max-width: 985px) {
+  .product__media-sublist {
+    margin-top: -22%;
+}}
+@media (max-width: 975px) {
+  .product__media-sublist {
+    margin-top: -22%;
 }}
 @media (max-width: 950px) {
   .product__media-sublist {
-    margin-top: -28%;
+    margin-top: -27%;
+}}
+@media (min-width: 925px) and (max-width: 950px) {
+  .product__media-sublist {
+    margin-top: -24%;
+}}
+@media (max-width: 925px) {
+  .product__media-sublist {
+    margin-top: -32%;
+}}
+@media (min-width: 910px) and (max-width: 925px) {
+  .product__media-sublist {
+    margin-top: -29%;
+}}
+@media (max-width: 910px) {
+  .product__media-sublist {
+    margin-top: -31%;
 }}
 @media (max-width: 900px) {
   .product__media-sublist {
@@ -1180,7 +1232,27 @@ fieldset.product-form__input .form__label {
 }
 @media (max-width:500px) {
   .product__media-sublist{
-    margin-top: 61px;
+    margin-top: 71px;
+  }
+}
+@media (max-width:450px) {
+  .product__media-sublist{
+    margin-top: 32px;
+  }
+}
+@media (max-width:400px) {
+  .product__media-sublist{
+    margin-top: 32px;
+  }
+}
+@media (max-width:350px) {
+  .product__media-sublist{
+    margin-top: 11px;
+  }
+}
+@media (max-width:300px) {
+  .product__media-sublist{
+    margin-top: -12px;
   }
 }
 .product__media-sublist.flickity-enabled {
