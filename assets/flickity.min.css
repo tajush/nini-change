@@ -80,7 +80,7 @@ https://flickity.metafizzy.co
 }
 @media (max-width:1300px) {
   .flickity-prev-next-button{
-    top: 10.5%;
+    top: 11.5%;
   width: 14px;
   height: 22px;
   border-radius: 50%;
@@ -130,7 +130,7 @@ https://flickity.metafizzy.co
 }
 @media (max-width:925px) {
   .flickity-prev-next-button{
-    top: 7.5%;
+    top: 8.5%;
   width: 14px;
   height: 22px;
   border-radius: 50%;
