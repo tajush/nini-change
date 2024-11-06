@@ -1916,9 +1916,12 @@ input[type=checkbox] {
   -webkit-appearance: none;
   appearance: none;
 }
-
+@media (min-width: 1200px) {
+  .quantity__button {
+    width: 5rem;
+}}
 .quantity__button {
-  width: 5rem;
+  width: 3rem;
   flex-shrink: 0;
   font-size: 1.8rem;
   border: 0;
