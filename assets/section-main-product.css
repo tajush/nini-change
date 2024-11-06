@@ -1134,7 +1134,7 @@ fieldset.product-form__input .form__label {
 }}
 @media(max-width:1275px) {
   .product__media-sublist {
-    margin-top: -60;
+    margin-top: -60px;
 }}
 @media(max-width:1250px) {
   .product__media-sublist {
@@ -1241,7 +1241,7 @@ fieldset.product-form__input .form__label {
 }
 @media (max-width:500px) {
   .product__media-sublist{
-    margin-top: 42px;
+    margin-top: 62px;
   }
 }
 @media (max-width:450px) {
@@ -1251,12 +1251,12 @@ fieldset.product-form__input .form__label {
 }
 @media (max-width:400px) {
   .product__media-sublist{
-    margin-top: 32px;
+    margin-top: 6px;
   }
 }
 @media (max-width:350px) {
   .product__media-sublist{
-    margin-top: 11px;
+    margin-top: -8px;
   }
 }
 @media (max-width:300px) {
