@@ -61,7 +61,7 @@
 							</button>
 						</noscript>
 
-						<button type="submit" class="cart__checkout-button button button--arrow" name="checkout"{% if cart == empty %} disabled{% endif %} form="cart">
+						<button id="exchange" type="submit" class="cart__checkout-button button button--arrow" name="checkout"{% if cart == empty %} disabled{% endif %} form="cart">
 							<span> {{ 'sections.cart.checkout' | t }} </span>
 							{%- render 'icon-checkout' -%}
 						</button>

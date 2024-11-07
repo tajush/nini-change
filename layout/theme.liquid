@@ -349,13 +349,16 @@ document.getElementById("newsletter").addEventListener("click", function() {
 		{%- endif -%}
 		<script src="{{ 'custom-dropdown.js' | asset_url }}" defer="defer"></script>
 		<!-- Flickity JS -->
-<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@loophq/onstore-sdk@latest/dist/loop-onstore-sdk.min.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"defer="defer"></script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/@loophq/onstore-sdk@latest/dist/loop-onstore-sdk.min.js"></script>
 <script> 
    LoopOnstore.init({ 
-   key: "test-key", 
-   attach: ".button, .button--primary, .button--full-width, .button--arrow", 
+   key: "7a7a5d0723ca7b5698b607c648b513bf0825166d", 
+   attach: "#exchange", 
    });
 </script>
+     
 </body>
 </html>
