@@ -880,23 +880,23 @@
 
   @media (max-width: 150000000000px) {
   .side-image{
-    left: -234% ;
+    left: -105% ;
   }}
   @media (max-width: 1800px) {
   .side-image{
-    left: -234% ;
+    left: -103% ;
   }}
   @media (max-width: 1700px) {
   .side-image{
-    left: -236% ;
+    left: -101%;
   }}
   @media (max-width: 1600px) {
   .side-image{
-    left: -236% ;
+    left: -99% ;
   }}
 @media (max-width: 1500px) {
   .side-image{
-    left: -231% ;
+    left: -109% ;
   }}
   @media (max-width: 1400px) {
   .side-image{
@@ -905,7 +905,7 @@
 } 
   @media (max-width: 1300px)  {
   .side-image{
-    left: -121% ;
+    left: -136% ;
   }
 } 
       @media (max-width: 1275px)  {
@@ -915,7 +915,7 @@
 } 
     @media (max-width: 1250px)  {
   .side-image{
-    left: -129% ;
+    left: -138% ;
   }
 } 
 @media (max-width: 1225px)  {
@@ -925,12 +925,12 @@
 } 
   @media (max-width: 1200px)  {
   .side-image{
-    left: -690px;
+    left: -775px;
   }
 } 
    @media (max-width: 1100px)  {
   .side-image{
-    left: -685px ;
+    left: -751px ;
   }
 } 
    @media (max-width: 1000px)  {
@@ -950,17 +950,17 @@
 } 
    @media (max-width: 985px)  {
   .side-image{
-    left:-103%;
+    left:-115%;
   }
 } 
   @media (max-width: 975px)  {
   .side-image{
-    left:-112%;
+    left:-124%;
   }
 } 
 @media (max-width: 950px)  {
   .side-image{
-    left:-120%;
+    left:-132%;
   }
 } 
   @media (max-width: 925px)  {
@@ -975,7 +975,7 @@
 } 
 @media (max-width: 800px)  {
   .side-image{
-    left:-13% ;
+    left:-19% ;
   }
 } 
 @media (max-width: 700px)  {
@@ -1041,11 +1041,11 @@
   .wrapper-size{
     height:100% ;
   }
-  @media screen and (min-width: 1400px) and (max-width: 20000px)  {
+  /* @media screen and (min-width: 1400px) and (max-width: 20000px)  {
     .wrapper-size {
         height: 126% !important ;
     }
-}
+} */
   @media  (min-width: 900px) {
     .wrapper-size {
       height:76% ;
@@ -1449,27 +1449,27 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-// document.addEventListener('DOMContentLoaded', function() {
-//   var images = document.querySelectorAll('.main-image');
-//   var totalImages = images.length;
-//   var loadedImages = 0;
+document.addEventListener('DOMContentLoaded', function() {
+  var images = document.querySelectorAll('.main-image');
+  var totalImages = images.length;
+  var loadedImages = 0;
 
-//   images.forEach(function(image) {
-//     image.onload = function() {
-//       loadedImages++;
-//       if (loadedImages === totalImages) {
-//         // Initialize Flickity or slider
-//         var elem = document.querySelector('.product__media-sublist');
-//         var flkty = new Flickity(elem, {
-//           asNavFor: '.product__media-list',
-//           contain: true,
-//           pageDots: false,
-//           prevNextButtons: false
-//         });
-//       }
-//     };
-//   });
-// });
+  images.forEach(function(image) {
+    image.onload = function() {
+      loadedImages++;
+      if (loadedImages === totalImages) {
+        // Initialize Flickity or slider
+        var elem = document.querySelector('.product__media-sublist');
+        var flkty = new Flickity(elem, {
+          asNavFor: '.product__media-list',
+          contain: true,
+          pageDots: false,
+          prevNextButtons: false
+        });
+      }
+    };
+  });
+});
 
 
   const product_collaps = document.querySelectorAll('#product_collaps_wrapper .product__additional');

@@ -4766,13 +4766,13 @@ details-disclosure > details.header__mega-menu-details {
   border-right: 1px solid #ccc;
 }
 
-@media screen and (max-width: 945px) {
+/* @media screen and (max-width: 945px) {
   position: absolute;
   top: -280%;
   left: 50%;
   transform: translate(-50%, 35%);
   max-width: 100%;
-}
+} */
 
 /* Custom style for comming soon page */
 #nini_coming-heading {
