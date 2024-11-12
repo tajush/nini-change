@@ -1,6 +1,15 @@
 <!doctype html>
 <html class="no-js" lang="{{ request.locale.iso_code }}">
 	<head>
+		<style>
+			.loop-returns-activated #afterpay {
+ display: none !important;
+}
+.loop-returns-activated .alternative-payment-methods {
+ display: none !important;
+}
+		</style>
+
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width,initial-scale=1">
@@ -279,11 +288,11 @@
 			var content = {{ content | json }};
 		</script>
 
-      <script>
+       {% comment %} <script>
 document.getElementById("newsletter").addEventListener("click", function() {
-    window.location.href = "https://6d4b88-3.myshopify.com//pages/sign-up-for-newsletter";
+    window.location.href = "https://nini-designs.com/pages/sign-up-for-newsletter";
 });
-</script>
+</script>  {% endcomment %}
 
       <script>
         document.addEventListener("DOMContentLoaded", function() {
@@ -352,13 +361,14 @@ document.getElementById("newsletter").addEventListener("click", function() {
 <!-- <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"defer="defer"></script> -->
 
 
-<script defer src="https://cdn.jsdelivr.net/npm/@loophq/onstore-sdk@latest/dist/loop-onstore-sdk.min.js"></script>
-<script> 
+{% comment %} <script src="https://cdn.jsdelivr.net/npm/@loophq/onstore-sdk@latest/dist/loop-onstore-sdk.min.js"></script> {% endcomment %}
+{% comment %} <script > 
+
    LoopOnstore.init({ 
-   key: "7a7a5d0723ca7b5698b607c648b513bf0825166d", 
-   attach: "#exchange", 
+   key: "8f452ebf955050bef8696083f097fb48c97157cd", 
+   attach: "#CartDrawer-Checkout, #exchange", 
    });
-</script>
-     
+</script> {% endcomment %}
+{% comment %} <script src="{{ 'init-loop.js' | asset_url }}" ></script> {% endcomment %}
 </body>
 </html>
