@@ -325,11 +325,11 @@ https://flickity.metafizzy.co
 }
 } */
 .flickity-prev-next-button.previous {
-  left: -11px;
+  left: -17px;
 }
 
 .flickity-prev-next-button.next {
-  right: -11px;
+  right: -17px;
 }
 
 .flickity-rtl .flickity-prev-next-button.previous {
