@@ -8,6 +8,7 @@
 .loop-returns-activated .alternative-payment-methods {
  display: none !important;
 }
+   
 		</style>
 
 		<meta charset="utf-8">
@@ -370,5 +371,38 @@ document.getElementById("newsletter").addEventListener("click", function() {
    });
 </script> {% endcomment %}
 {% comment %} <script src="{{ 'init-loop.js' | asset_url }}" ></script> {% endcomment %}
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const instaLink = "https://www.instagram.com/ninidesignsco/";
+  
+  // Function to add click event when the h2 appears
+  function addClickEventToInstaHeading() {
+    const instaHeading = document.querySelector("#insta-feed h2");
+    if (instaHeading) {
+       instaHeading.style.cursor = "pointer";
+      instaHeading.addEventListener("click", function() {
+        window.open(instaLink, "_blank");
+      });
+    }
+  }
+
+  // Use MutationObserver to watch for changes in #insta-feed
+  const targetNode = document.getElementById("insta-feed");
+  if (targetNode) {
+    const observer = new MutationObserver(function(mutationsList, observer) {
+      for (const mutation of mutationsList) {
+        if (mutation.type === "childList") {
+          addClickEventToInstaHeading(); // Add click event if <h2> is now available
+        }
+      }
+    });
+
+    // Observe the #insta-feed for added nodes
+    observer.observe(targetNode, { childList: true, subtree: true });
+  }
+});
+</script>
+
+
 </body>
 </html>

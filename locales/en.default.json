@@ -138,7 +138,7 @@
   "products": {
     "product": {
       "back": "Collection",
-      "add_to_cart": "PREORDER NOW",
+      "add_to_cart": "Add to Cart",
       "description": "Description",
       "on_sale": "Sale",
       "product_variants": "Product variants",
