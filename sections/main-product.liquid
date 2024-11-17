@@ -514,8 +514,8 @@
                         {%- endif -%}
                       </h2>
                       <div
-                        style="margin-top: 14px;max-width: 400px;
-    position: absolute;background:#EBEBEB;z-index:9999;padding: 10px;"
+                        style="margin-top: 14px;max-width: 558px;
+    position: absolute;background:#EBEBEB;z-index:9999;padding: 40px;"
                         class="product__additional-description rte content  "
                         {% if block.settings.tab_opened %}
                           style="display: block;"
@@ -1473,30 +1473,40 @@ document.addEventListener('DOMContentLoaded', function() {
             const collaps_des= document.getElementsByClassName('product__additional-description');
   const collaps_items = Array.from(product_collaps);
   collaps_items.forEach(item=>{item.addEventListener('click', (e) => {
-  console.log(item);
+     const marginbtm = document.querySelector('.margin-btm');
+        marginbtm.style.marginBottom = '1100px';
+  console.log("eeeeeeeeeee",item);
     if(item.classList.contains('active')){
       const collaps_content = item.childNodes[3];
-      console.log(collaps_items)
+      console.log("aaaaaaaa",collaps_items)
       const arrowIcon = item.childNodes[1].childNodes[1];
-      
+     
       if(collaps_content.classList.contains('hidden')){
+        
         collaps_content.classList.remove('hidden');
         collaps_content.style.transition='0.25s all'
         
         arrowIcon.style.transform='rotate(90deg)';
-        const marginbtm = document.querySelector('.margin-btm');
-marginbtm.style.marginBottom = '1100px';
+
 
       }else{
+        const marginbtm = document.querySelector('.margin-btm');
+        marginbtm.style.marginBottom = '';
         collaps_content.classList.add('hidden');
         arrowIcon.style.transform='rotate(0deg)';
-        const marginbtm = document.querySelector('.margin-btm');
-marginbtm.style.marginBottom = '';
+ 
 
       }
       
     }
     });})
+
+
+
+
+
+
+
 
 //   document.getElementsByClassName('toggleButton').addEventListener('click', function() {
 //     var content = document.getElementByClassName('content');
