@@ -150,9 +150,7 @@ function quickView() {
 			afterShow: function () {
 				if (theme.quickviewText.length > 0) {
 					$(".fancybox-outer").append(`
-					<div style="
-    margin-top: 36px;
-" class = "qv-announcement color-inverse">
+					<div class = "qv-announcement color-inverse">
 						${theme.quickviewText}
 					</div>
 					`);
