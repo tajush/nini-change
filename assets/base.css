@@ -3372,7 +3372,7 @@ details[open] > .header__icon--menu .icon-hamburger {
   content: "";
   position: absolute;
   bottom: 12px;
-  left: 63px;
+  left: 21px;
   height: 1px;
   width: 28%;
   background-color: rgba(var(--color-foreground));
