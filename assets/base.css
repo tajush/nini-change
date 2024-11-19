@@ -4845,3 +4845,50 @@ img#niniO_coming-lock-icon {
       width: 140px !important;
 
 } */
+
+/* Quick-view */
+
+ #quick-view .product__media-wrapper{
+  height: 692px ;
+
+ }
+ #quick-view .product__media-list-wrapper-outer.wrapper-outer{
+  flex-grow: 1;
+ }
+ #quick-view .product__media-wrapper {
+  width: 100% !important;
+}
+
+  /* @media (min-width: 725px) {
+  #quick-view .product__media-wrapper {
+      width: 50%;
+  }
+}  */
+ 
+ /* @media (min-width: 585px) and (max-width: 719px) {
+  #quick-view .product__media-wrapper {
+      width: 100% !important;
+      background-color: aqua;
+  }
+}   */
+
+
+#quick-view .product__info-wrapper{
+  margin-top: -61px !important;
+
+}
+#quick-view .product__media-list .product__media img{
+  height: 492px;
+}
+#quick-view .product__info-container{
+  position: absolute;
+}
+#quick-view .product__media-list-wrapper-outer .product__media-list-wrapper-outer-arrow_prev {
+  left: 99px;
+}
+#quick-view .product__media-list-wrapper-outer .product__media-list-wrapper-outer-arrow_next {
+  right: 107px;
+}
+#quick-view .product__media{
+  background-color: transparent;
+}
