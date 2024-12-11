@@ -1174,8 +1174,9 @@
 						<details-disclosure class="header__account">
 							<details>
 								<summary class="header__icon header__icon--account link--text  header__icon--summary focus-inset modal__toggle" aria-haspopup="dialog" role="button">
-									{% render 'icon-account' %}
+									<span class="icon-wrapper">{% render 'icon-account' %}</span>  <span class="account-text">Account</span>
 								</summary>
+								
 								<div class="header__account-modal modal__toggle color-background-2" role="dialog" aria-modal="true">
 									{%- if customer -%}
 										<div class="header__account__account">
@@ -1215,19 +1216,19 @@
 
 				</div>
                     
-                  <div class="header__icons">
+                  {% comment %} <div class="header__icons">
                       {% if customer %}
                           <a href="/account" class="sign__btn">Account</a>
                       {% else %}
                           <a href="{{ '/account/login' | shopify_url }}" class="sign__btn">Sign in</a>
                       {% endif %}
-                  </div>
+                  </div> {% endcomment %}
 
 			</div>
 		</div>
-		<a href="{{ routes.cart_url }}" class=" {% if request.page_type != 'cart' %}header__cart{% endif %} header__icon header__icon--cart link link--text focus-inset" id="cart-icon-bubble">
+		<a href="{{ routes.cart_url }}" class=" {% if request.page_type != 'cart' %}header__cart{% endif %} header__icon header__icon--cart link link--text focus-inset" id="cart-icon-bubble" >
 			{%- liquid
-				render 'icon-cart' -%}
+				render 'icon-cart' -%} <span class="cart-text">cart</span>
 			<span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
 			{%- if cart != empty -%}
 				<div class="cart-count-bubble">
@@ -1243,7 +1244,38 @@
 
 {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
 {% endif %}
+<style>
+	.icon-wrapper{
+	padding-left: 11px;
+}
+.account-text{
+	display: none !important;
+	font-size: smaller;
+}
+.cart-text{
+	display: none !important;
+	margin-left: -0.3rem;
+}
+#cart-icon-bubble{
+	margin-left: -4px;
+  }
+@media screen and (min-width: 990px) {
+	.icon-wrapper{
+	padding-left: 30px;
+}
+  
+   .account-text{
+    display: inline-flex !important;
+  } 
+  .cart-text{
+    display: inline-flex !important;
+  } 
+  #cart-icon-bubble{
+	margin-left: 44px;
+  }
+}
 
+</style>
 {% javascript %}
 class StickyHeader extends HTMLElement {
 constructor() {

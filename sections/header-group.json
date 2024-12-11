@@ -39,9 +39,7 @@
           "settings": {
             "mega_menu_trigger": "shop",
             "mega_menu_header": "",
-            "select_collections": [
-
-            ],
+            "select_collections": [],
             "image": "collection"
           }
         }
@@ -82,10 +80,32 @@
         "show_date": true,
         "show_author": true
       }
+    },
+    "1731406457d214badf": {
+      "type": "apps",
+      "blocks": {
+        "loop_returns_exchanges_order_tracking_PVmXGD": {
+          "type": "shopify://apps/loop-returns-exchanges/blocks/order-tracking/e32ccd84-40d6-4b16-98bf-b6b9da010afd",
+          "disabled": true,
+          "settings": {
+            "color": "#334fb4",
+            "text_color": "#ffffff",
+            "background_image": "",
+            "compact_view": false
+          }
+        }
+      },
+      "block_order": [
+        "loop_returns_exchanges_order_tracking_PVmXGD"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "announcement-bar",
-    "header"
+    "header",
+    "1731406457d214badf"
   ]
 }

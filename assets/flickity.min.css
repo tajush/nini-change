@@ -73,7 +73,7 @@ https://flickity.metafizzy.co
 
 .flickity-prev-next-button {
   top: 11%;
-  width: 14px;
+  width: 12px;
   height: 22px;
   border-radius: 50%;
   transform: translateY(-50%);
@@ -81,7 +81,7 @@ https://flickity.metafizzy.co
 @media (max-width:1300px) {
   .flickity-prev-next-button{
     top: 10.5%;
-  width: 14px;
+  width: 12px;
   height: 22px;
   border-radius: 50%;
   transform: translateY(-50%);
@@ -90,8 +90,8 @@ https://flickity.metafizzy.co
 }
 @media (max-width:1600000px) {
   .flickity-prev-next-button{
-    top: 6%;
-  width: 14px;
+    top: 13%;
+  width: 12px;
   height: 22px;
   border-radius: 50%;
   transform: translateY(-50%);
@@ -100,8 +100,8 @@ https://flickity.metafizzy.co
 }
 @media (max-width:1500px) {
   .flickity-prev-next-button{
-    top: 5.5%;
-  width: 14px;
+    top: 12%;
+  width: 12px;
   height: 22px;
   border-radius: 50%;
   transform: translateY(-50%);
@@ -111,7 +111,17 @@ https://flickity.metafizzy.co
 @media (max-width:1400px) {
   .flickity-prev-next-button{
     top: 11.5%;
-  width: 14px;
+  width: 12px;
+  height: 22px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  
+}
+}
+@media (max-width:1350px) {
+  .flickity-prev-next-button{
+    top: 11.5%;
+  width: 12px;
   height: 22px;
   border-radius: 50%;
   transform: translateY(-50%);
@@ -121,7 +131,7 @@ https://flickity.metafizzy.co
 @media (max-width:1300px) {
   .flickity-prev-next-button{
     top: 11.5%;
-  width: 14px;
+  width: 12px;
   height: 22px;
   border-radius: 50%;
   transform: translateY(-50%);
@@ -131,7 +141,7 @@ https://flickity.metafizzy.co
 @media (max-width:1200px) {
   .flickity-prev-next-button{
     top: 11.5%;
-  width: 14px;
+  width: 12px;
   height: 22px;
   border-radius: 50%;
   transform: translateY(-50%);
@@ -141,7 +151,7 @@ https://flickity.metafizzy.co
 @media (max-width:1100px) {
   .flickity-prev-next-button{
     top: 12.5%;
-  width: 14px;
+  width: 12px;
   height: 22px;
   border-radius: 50%;
   transform: translateY(-50%);
@@ -151,7 +161,7 @@ https://flickity.metafizzy.co
 @media (max-width:1000px) {
   .flickity-prev-next-button{
     top: 11.5%;
-  width: 14px;
+  width: 12px;
   height: 22px;
   border-radius: 50%;
   transform: translateY(-50%);
@@ -161,7 +171,7 @@ https://flickity.metafizzy.co
 @media (max-width:989px) {
   .flickity-prev-next-button{
     top: 10.5%;
-  width: 14px;
+  width: 12px;
   height: 22px;
   border-radius: 50%;
   transform: translateY(-50%);
@@ -170,8 +180,8 @@ https://flickity.metafizzy.co
 }
 @media (max-width:925px) {
   .flickity-prev-next-button{
-    top: 9.5%;
-  width: 14px;
+    top: 10.5%;
+  width: 12px;
   height: 22px;
   border-radius: 50%;
   transform: translateY(-50%);
@@ -180,16 +190,146 @@ https://flickity.metafizzy.co
 }
 @media (max-width:900px) {
   .flickity-prev-next-button{
-    display: none;
+    top: 48.5%;
+  width: 12px;
+  height: 22px;
+  border-radius: 50%;
+  transform: translateY(-50%);
   
 }
 }
+@media (max-width:850px) {
+  .flickity-prev-next-button{
+    top: 48.5%;
+  width: 12px;
+  height: 22px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  
+}
+}
+@media (max-width:800px) {
+  .flickity-prev-next-button{
+    top: 48.5%;
+  width: 12px;
+  height: 22px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  
+}
+}
+@media (max-width:750px) {
+  .flickity-prev-next-button{
+    top: 42.5%;
+  width: 12px;
+  height: 22px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  
+}
+}
+@media (max-width:700px) {
+  .flickity-prev-next-button{
+    top: 42.5%;
+  width: 12px;
+  height: 22px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  
+}
+}
+@media (max-width:650px) {
+  .flickity-prev-next-button{
+    top: 42.5%;
+  width: 12px;
+  height: 22px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  
+}
+}
+@media (max-width:600px) {
+  .flickity-prev-next-button{
+    top: 42.5%;
+  width: 12px;
+  height: 22px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  
+}
+}
+@media (max-width:550px) {
+  .flickity-prev-next-button{
+    top: 40.5%;
+  width: 12px;
+  height: 22px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  
+}
+}
+@media (max-width:500px) {
+  .flickity-prev-next-button{
+    top: 25.5%;
+  width: 12px;
+  height: 22px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  
+}
+}
+@media (max-width:450px) {
+  .flickity-prev-next-button{
+    top: 25.5%;
+  width: 12px;
+  height: 22px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  
+}
+}
+@media (max-width:400px) {
+  .flickity-prev-next-button{
+    top: 24.5%;
+  width: 12px;
+  height: 22px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  
+}
+}
+@media (max-width:350px) {
+  .flickity-prev-next-button{
+    top: 22.5%;
+  width: 12px;
+  height: 22px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  
+}
+}
+@media (max-width:300px) {
+  .flickity-prev-next-button{
+    top: 22.5%;
+  width: 12px;
+  height: 22px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  
+}
+}
+/* @media (max-width:900px) {
+  .flickity-prev-next-button{
+    display: none;
+  
+}
+} */
 .flickity-prev-next-button.previous {
-  left: -11px;
+  left: -17px;
 }
 
 .flickity-prev-next-button.next {
-  right: -11px;
+  right: -17px;
 }
 
 .flickity-rtl .flickity-prev-next-button.previous {
@@ -205,7 +345,7 @@ https://flickity.metafizzy.co
 .flickity-prev-next-button .flickity-button-icon {
   position: absolute;
   left: 20%;
-  top: -154%;
+  top: -146%;
   width: 60%;
   height: 60%;
 }

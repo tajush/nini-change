@@ -229,7 +229,9 @@
         </div>
       {% endif %}
 
-      <div class="product__info-wrapper">
+      <div class="product__info-wrapper"style="
+      margin-top: 24px;
+  ">
         <div id="ProductInfo-{{ section.id }}" class="product__info-container">
           {%- assign product_form_id = 'product-form-' | append: section.id -%}
 
@@ -512,8 +514,8 @@
                         {%- endif -%}
                       </h2>
                       <div
-                        style="margin-top: 14px;max-width: 400px;
-    position: absolute;background:#EBEBEB;z-index:9999;padding: 10px;"
+                        style="margin-top: 14px;max-width: 558px;
+    position: absolute;background:#EBEBEB;z-index:9999;padding: 40px;"
                         class="product__additional-description rte content  "
                         {% if block.settings.tab_opened %}
                           style="display: block;"
@@ -840,11 +842,8 @@
   </product-modal>
 </section>
 <style>
-  .main-image {
-  width: 100%; /* Ensure full width */
-  height: auto; /* Maintain aspect ratio */
-  
-}
+
+ 
 
       /* .hidden {
         display: none;
@@ -876,44 +875,44 @@
   }
 
 
-  @media (max-width: 15000px) {
+  @media (max-width: 150000000000px) {
   .side-image{
-    left: -167% ;
+    left: -105% ;
   }}
   @media (max-width: 1800px) {
   .side-image{
-    left: -234% ;
+    left: -103% ;
   }}
   @media (max-width: 1700px) {
   .side-image{
-    left: -236% ;
+    left: -101%;
   }}
   @media (max-width: 1600px) {
   .side-image{
-    left: -236% ;
+    left: -99% ;
   }}
 @media (max-width: 1500px) {
   .side-image{
-    left: -248% ;
+    left: -109% ;
   }}
   @media (max-width: 1400px) {
   .side-image{
-    left: -105% ;
+    left: -118% ;
   }
 } 
   @media (max-width: 1300px)  {
   .side-image{
-    left: -121% ;
+    left: -136% ;
   }
 } 
       @media (max-width: 1275px)  {
   .side-image{
-    left: -116% ;
+    left: -128% ;
   }
 } 
     @media (max-width: 1250px)  {
   .side-image{
-    left: -129% ;
+    left: -138% ;
   }
 } 
 @media (max-width: 1225px)  {
@@ -923,12 +922,12 @@
 } 
   @media (max-width: 1200px)  {
   .side-image{
-    left: -690px;
+    left: -775px;
   }
 } 
    @media (max-width: 1100px)  {
   .side-image{
-    left: -685px ;
+    left: -751px ;
   }
 } 
    @media (max-width: 1000px)  {
@@ -948,17 +947,17 @@
 } 
    @media (max-width: 985px)  {
   .side-image{
-    left:-103%;
+    left:-115%;
   }
 } 
   @media (max-width: 975px)  {
   .side-image{
-    left:-112%;
+    left:-124%;
   }
 } 
 @media (max-width: 950px)  {
   .side-image{
-    left:-120%;
+    left:-132%;
   }
 } 
   @media (max-width: 925px)  {
@@ -973,7 +972,7 @@
 } 
 @media (max-width: 800px)  {
   .side-image{
-    left:-13% ;
+    left:-19% ;
   }
 } 
 @media (max-width: 700px)  {
@@ -998,12 +997,12 @@
 } 
 @media (max-width: 400px)  {
   .side-image{
-    left:-58% ;
+    left:-64% ;
   }
 } 
   @media (max-width: 350px)  {
   .side-image{
-    left:-70% ;
+    left:-76% ;
   }
 } 
 @media (max-width: 300px)  {
@@ -1039,11 +1038,11 @@
   .wrapper-size{
     height:100% ;
   }
-  @media screen and (min-width: 1400px) and (max-width: 20000px)  {
+  /* @media screen and (min-width: 1400px) and (max-width: 20000px)  {
     .wrapper-size {
         height: 126% !important ;
     }
-}
+} */
   @media  (min-width: 900px) {
     .wrapper-size {
       height:76% ;
@@ -1065,6 +1064,10 @@
     .wrapper-outer {
       width:60%;
   }}
+  @media (max-width: 1100px) {
+    .media-btm {
+      margin-bottom: 63px;
+  }}
    @media (max-width: 900px) {
     .media-btm {
       margin-bottom: 542px;
@@ -1076,12 +1079,12 @@
   }}
   @media (max-width: 800px) {
     .media-btm {
-        margin-bottom: 97%;
+        margin-bottom: 108%;
     }
 }
   @media (max-width: 700px) {
     .media-btm {
-        margin-bottom: 105%;
+        margin-bottom: 108%;
     }
 }
 @media (max-width: 600px) {
@@ -1443,57 +1446,67 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-// document.addEventListener('DOMContentLoaded', function() {
-//   var images = document.querySelectorAll('.main-image');
-//   var totalImages = images.length;
-//   var loadedImages = 0;
+document.addEventListener('DOMContentLoaded', function() {
+  var images = document.querySelectorAll('.main-image');
+  var totalImages = images.length;
+  var loadedImages = 0;
 
-//   images.forEach(function(image) {
-//     image.onload = function() {
-//       loadedImages++;
-//       if (loadedImages === totalImages) {
-//         // Initialize Flickity or slider
-//         var elem = document.querySelector('.product__media-sublist');
-//         var flkty = new Flickity(elem, {
-//           asNavFor: '.product__media-list',
-//           contain: true,
-//           pageDots: false,
-//           prevNextButtons: false
-//         });
-//       }
-//     };
-//   });
-// });
+  images.forEach(function(image) {
+    image.onload = function() {
+      loadedImages++;
+      if (loadedImages === totalImages) {
+        // Initialize Flickity or slider
+        var elem = document.querySelector('.product__media-sublist');
+        var flkty = new Flickity(elem, {
+          asNavFor: '.product__media-list',
+          contain: true,
+          pageDots: false,
+          prevNextButtons: false
+        });
+      }
+    };
+  });
+});
 
 
   const product_collaps = document.querySelectorAll('#product_collaps_wrapper .product__additional');
             const collaps_des= document.getElementsByClassName('product__additional-description');
   const collaps_items = Array.from(product_collaps);
   collaps_items.forEach(item=>{item.addEventListener('click', (e) => {
-  console.log(item);
+     const marginbtm = document.querySelector('.margin-btm');
+        marginbtm.style.marginBottom = '1100px';
+  console.log("eeeeeeeeeee",item);
     if(item.classList.contains('active')){
       const collaps_content = item.childNodes[3];
-      console.log(collaps_items)
+      console.log("aaaaaaaa",collaps_items)
       const arrowIcon = item.childNodes[1].childNodes[1];
-      
+     
       if(collaps_content.classList.contains('hidden')){
+        
         collaps_content.classList.remove('hidden');
         collaps_content.style.transition='0.25s all'
         
         arrowIcon.style.transform='rotate(90deg)';
-        const marginbtm = document.querySelector('.margin-btm');
-marginbtm.style.marginBottom = '1100px';
+
 
       }else{
+        const marginbtm = document.querySelector('.margin-btm');
+        marginbtm.style.marginBottom = '';
         collaps_content.classList.add('hidden');
         arrowIcon.style.transform='rotate(0deg)';
-        const marginbtm = document.querySelector('.margin-btm');
-marginbtm.style.marginBottom = '';
+ 
 
       }
       
     }
     });})
+
+
+
+
+
+
+
 
 //   document.getElementsByClassName('toggleButton').addEventListener('click', function() {
 //     var content = document.getElementByClassName('content');

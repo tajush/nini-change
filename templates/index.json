@@ -100,9 +100,7 @@
         "column_FnRmrE",
         "column_NDxUDz"
       ],
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "title": "",
         "multicolumn_to_show_row": 3,
@@ -573,9 +571,7 @@
         "heading": "<p>Some header</p>",
         "description": "Some descriptive text for your featured items section. For better alignment, it is better to use text in several lines",
         "subtitle": "Subheading",
-        "product_list": [
-
-        ],
+        "product_list": [],
         "products_to_show": 12,
         "image_ratio": "square",
         "image_fit": "contain",
@@ -856,7 +852,7 @@
     "newsletter": {
       "type": "newsletter",
       "settings": {
-        "heading": "<p>Subscribe to the newsletter</p>",
+        "heading": "<p>Subscribe to the Newsletter</p>",
         "heading_animation": false,
         "sub_title": "",
         "newsletter_text": "",

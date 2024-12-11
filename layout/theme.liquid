@@ -1,6 +1,16 @@
 <!doctype html>
 <html class="no-js" lang="{{ request.locale.iso_code }}">
 	<head>
+		<style>
+			.loop-returns-activated #afterpay {
+ display: none !important;
+}
+.loop-returns-activated .alternative-payment-methods {
+ display: none !important;
+}
+   
+		</style>
+
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width,initial-scale=1">
@@ -8,7 +18,7 @@
 		<link rel="canonical" href="{{ canonical_url }}">
 		<link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
 <!-- Flickity CSS -->
-<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+<!-- <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css"> -->
 
 
 
@@ -20,7 +30,8 @@
 			<link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
 		{%- endunless -%}
 
-		<title>{{ page_title }}</title>
+		<!-- <title>{{ page_title }}</title> -->
+      <title>NINI Designs</title>
 
 		{% if page_description %}
 			<meta name="description" content="{{ page_description | escape }}">
@@ -279,11 +290,11 @@
 			var content = {{ content | json }};
 		</script>
 
-      <script>
+       {% comment %} <script>
 document.getElementById("newsletter").addEventListener("click", function() {
-    window.location.href = "https://6d4b88-3.myshopify.com//pages/sign-up-for-newsletter";
+    window.location.href = "https://nini-designs.com/pages/sign-up-for-newsletter";
 });
-</script>
+</script>  {% endcomment %}
 
       <script>
         document.addEventListener("DOMContentLoaded", function() {
@@ -349,13 +360,50 @@ document.getElementById("newsletter").addEventListener("click", function() {
 		{%- endif -%}
 		<script src="{{ 'custom-dropdown.js' | asset_url }}" defer="defer"></script>
 		<!-- Flickity JS -->
-<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@loophq/onstore-sdk@latest/dist/loop-onstore-sdk.min.js"></script>
-<script> 
+<!-- <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"defer="defer"></script> -->
+
+
+{% comment %} <script src="https://cdn.jsdelivr.net/npm/@loophq/onstore-sdk@latest/dist/loop-onstore-sdk.min.js"></script> {% endcomment %}
+{% comment %} <script > 
+
    LoopOnstore.init({ 
-   key: "test-key", 
-   attach: ".button, .button--primary, .button--full-width, .button--arrow", 
+   key: "8f452ebf955050bef8696083f097fb48c97157cd", 
+   attach: "#CartDrawer-Checkout, #exchange", 
    });
+</script> {% endcomment %}
+{% comment %} <script src="{{ 'init-loop.js' | asset_url }}" ></script> {% endcomment %}
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const instaLink = "https://www.instagram.com/ninidesignsco/";
+  
+  // Function to add click event when the h2 appears
+  function addClickEventToInstaHeading() {
+    const instaHeading = document.querySelector("#insta-feed h2");
+    if (instaHeading) {
+       instaHeading.style.cursor = "pointer";
+      instaHeading.addEventListener("click", function() {
+        window.open(instaLink, "_blank");
+      });
+    }
+  }
+
+  // Use MutationObserver to watch for changes in #insta-feed
+  const targetNode = document.getElementById("insta-feed");
+  if (targetNode) {
+    const observer = new MutationObserver(function(mutationsList, observer) {
+      for (const mutation of mutationsList) {
+        if (mutation.type === "childList") {
+          addClickEventToInstaHeading(); // Add click event if <h2> is now available
+        }
+      }
+    });
+
+    // Observe the #insta-feed for added nodes
+    observer.observe(targetNode, { childList: true, subtree: true });
+  }
+});
 </script>
+
+
 </body>
 </html>

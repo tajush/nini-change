@@ -12,10 +12,10 @@
     "main": {
       "type": "main-page",
       "custom_css": [
-        "h1{font-size:55px;}"
+        "h1 {font-size: 55px;}",
+        "h1 {display: none;}"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "image-with-text": {
       "type": "image-with-text",

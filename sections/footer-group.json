@@ -1,7 +1,37 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "type": "footer",
   "name": "t:sections.footer.settings.footer-group.label",
   "sections": {
+    "173140657124591367": {
+      "type": "apps",
+      "blocks": {
+        "loop_returns_exchanges_order_tracking_mktAh4": {
+          "type": "shopify://apps/loop-returns-exchanges/blocks/order-tracking/e32ccd84-40d6-4b16-98bf-b6b9da010afd",
+          "settings": {
+            "color": "#334fb4",
+            "text_color": "#ffffff",
+            "background_image": "",
+            "compact_view": false
+          }
+        }
+      },
+      "block_order": [
+        "loop_returns_exchanges_order_tracking_mktAh4"
+      ],
+      "disabled": true,
+      "settings": {
+        "include_margins": true
+      }
+    },
     "footer": {
       "type": "footer",
       "blocks": {
@@ -65,6 +95,7 @@
     }
   },
   "order": [
+    "173140657124591367",
     "footer"
   ]
 }

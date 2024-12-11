@@ -136,10 +136,32 @@
         "esc-close": false,
         "f4-close": false
       }
+    },
+    "1731410576f1587ef8": {
+      "type": "apps",
+      "blocks": {
+        "loop_returns_exchanges_order_tracking_B8WiUT": {
+          "type": "shopify://apps/loop-returns-exchanges/blocks/order-tracking/e32ccd84-40d6-4b16-98bf-b6b9da010afd",
+          "settings": {
+            "color": "#334FB4",
+            "text_color": "#FFFFFF",
+            "background_image": "",
+            "compact_view": false
+          }
+        }
+      },
+      "block_order": [
+        "loop_returns_exchanges_order_tracking_B8WiUT"
+      ],
+      "disabled": true,
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "popup_7TyjLN",
-    "notification_banner_EH8axB"
+    "notification_banner_EH8axB",
+    "1731410576f1587ef8"
   ]
 }

@@ -205,6 +205,10 @@
   position: relative;
   user-select: none;
 }
+/* @media(min-width: 1400px) {
+  .product__media-list-wrapper-outer .product__media-list-wrapper-outer-arrow{
+    top: 29%;
+  }} */
 .product__media-list-wrapper-outer .product__media-list-wrapper-outer-arrow {
   width: 63px;
   height: 63px;
@@ -1110,23 +1114,23 @@ fieldset.product-form__input .form__label {
 }}
 @media(max-width:1800px) {
   .product__media-sublist {
-    margin-top: -55%;
+    margin-top: 0%;
 }}
 @media(max-width:1700px) {
   .product__media-sublist {
-    margin-top: -53%;
+    margin-top: 0%;
 }}
 @media(max-width:1600px) {
   .product__media-sublist {
-    margin-top: -55%;
+    margin-top: 0%;
 }}
 @media(max-width:1500px) {
   .product__media-sublist {
-    margin-top: -61%;
+    margin-top: -4%;
 }}
 @media(max-width:1400px) {
   .product__media-sublist {
-    margin-top: -3%;
+    margin-top: -7%;
 }}
 @media(max-width:1300px) {
   .product__media-sublist {
@@ -1134,7 +1138,7 @@ fieldset.product-form__input .form__label {
 }}
 @media(max-width:1275px) {
   .product__media-sublist {
-    margin-top: -5%;
+    margin-top: -60px;
 }}
 @media(max-width:1250px) {
   .product__media-sublist {
@@ -1146,7 +1150,7 @@ fieldset.product-form__input .form__label {
 }}
 @media(max-width:1225px) {
   .product__media-sublist {
-    margin-top: -17%;
+    margin-top: -14%;
 }}
 @media(max-width:1200px) {
   .product__media-sublist {
@@ -1174,11 +1178,11 @@ fieldset.product-form__input .form__label {
 }}
 @media (max-width: 985px) {
   .product__media-sublist {
-    margin-top: -4%;
+    margin-top: -8%;
 }}
 @media (max-width: 975px) {
   .product__media-sublist {
-    margin-top: -6%;
+    margin-top: -9%;
 }}
 @media (max-width: 950px) {
   .product__media-sublist {
@@ -1186,7 +1190,7 @@ fieldset.product-form__input .form__label {
 }}
 @media (min-width: 925px) and (max-width: 950px) {
   .product__media-sublist {
-    margin-top: -9%;
+    margin-top: -14%;
 }}
 @media (max-width: 925px) {
   .product__media-sublist {
@@ -1236,12 +1240,12 @@ fieldset.product-form__input .form__label {
 }
 @media (max-width:600px) {
   .product__media-sublist{
-    margin-top: 125px;
+    margin-top: 127px;
   }
 }
 @media (max-width:500px) {
   .product__media-sublist{
-    margin-top: 71px;
+    margin-top: 50px;
   }
 }
 @media (max-width:450px) {
@@ -1251,12 +1255,22 @@ fieldset.product-form__input .form__label {
 }
 @media (max-width:400px) {
   .product__media-sublist{
-    margin-top: 32px;
+    margin-top: 22px;
+  }
+}
+@media (max-width:375px) {
+  .product__media-sublist{
+    margin-top: 12px;
   }
 }
 @media (max-width:350px) {
   .product__media-sublist{
-    margin-top: 11px;
+    margin-top: 3px;
+  }
+}
+@media (max-width:325px) {
+  .product__media-sublist{
+    margin-top: -12px;
   }
 }
 @media (max-width:300px) {
@@ -1316,6 +1330,7 @@ fieldset.product-form__input .form__label {
 
 .product__modal-opener {
   height: 100%;
+ 
 }
 
 .product__modal-opener--image .product__media-toggle:hover {

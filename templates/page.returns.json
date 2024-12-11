@@ -12,10 +12,9 @@
     "main": {
       "type": "main-page",
       "custom_css": [
-        "h1{display:none;}"
+        "h1 {display: none;}"
       ],
-      "settings": {
-      }
+      "settings": {}
     }
   },
   "order": [
