@@ -1,6 +1,10 @@
 <!doctype html>
 <html class="no-js" lang="{{ request.locale.iso_code }}">
 	<head>
+		{% if template == 'collection' %}
+			<link rel="canonical" href="{{ shop.url }}{{ collection.url }}" />
+		  {% endif %}
+		  
 		<style>
 			.loop-returns-activated #afterpay {
  display: none !important;
