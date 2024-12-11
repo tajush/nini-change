@@ -1,6 +1,8 @@
 <!doctype html>
 <html class="no-js" lang="{{ request.locale.iso_code }}">
 	<head>
+		<link rel="canonical" href="{{ shop.url }}{{ product.url }}" />
+
 		{% if page != 1 %}
 			<meta name="robots" content="noindex, follow">
 		  {% endif %}
