@@ -2,7 +2,7 @@
   {{page.metafields.pagefly.html_meta}}
 {% endif %}
 {% if request.path == '/a/pf_preview' %}
-  <meta name="robots" content="noindex">
+  {% comment %} <meta name="robots" content="noindex"> {% endcomment %}
 {% endif %}
 {%- liquid
   assign isValidPageBuitByPageFly = true
